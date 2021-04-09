@@ -902,7 +902,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('nokia', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` ~ Nihh Udah Jadi Stikernya`)
 									fs.unlinkSync(media)	
