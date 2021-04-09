@@ -327,11 +327,11 @@ async function starts() {
 			frhan.chatRead(from)
 
 			mess = {
-				wait: '*⏳ ᴡᴀɪᴛ ꜱᴇᴅᴀɴɢ ᴅɪ ᴩʀᴏꜱᴇꜱ...*',
+				wait: '*⏳ em processo...*',
 				success: '*ꜱᴜᴋꜱᴇꜱ...*',
 				error: {
 				 bug: '*Terjadi Kesalahan Coba Hubungi Owner Untuk Melaporkan Kesalahan*',
-				stick: ' *ɢᴀɢᴀʟ, ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴋᴏɴᴠᴇʀꜱɪ ɢᴀᴍʙᴀʀ ᴋᴇ ꜱᴛɪᴄᴋᴇʀ*\n*ᴄᴏʙᴀ ᴜʟᴀɴɢɪ ᴅᴇɴɢᴀɴ ʀᴇᴩʟy ꜰᴏᴛᴏ yɢ ꜱᴜᴅᴀʜ ᴛᴇʀᴋɪʀɪᴍ*',
+				stick: ' falhou, ocorreu um erro ao converter a imagem em sticker\ntente repeti-lo com a foto de resposta que foi enviada',
 				Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
 				},
 			only: {
@@ -902,7 +902,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('nokia', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('nokia', '9672-4995')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` ~ Nihh Udah Jadi Stikernya`)
 									fs.unlinkSync(media)	
@@ -930,7 +930,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('nokia', '9672-4995')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Nih Dah Jadi Gif Stikernya`)
 									fs.unlinkSync(media)
