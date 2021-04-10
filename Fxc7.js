@@ -328,21 +328,21 @@ async function starts() {
 
 			mess = {
 				wait: '*⏳ em processo...*',
-				success: '*ꜱᴜᴋꜱᴇꜱ...*',
+				success: 'sucesso...',
 				error: {
 				 bug: 'Ocorreu um erro Tente entrar em contato com o proprietário para relatar um erro',
 				stick: ' falhou, ocorreu um erro ao converter a imagem em sticker\ntente repeti-lo com a foto de resposta que foi enviada',
-				Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
+				Iv: 'Desculpe, link inválido!'
 				},
 			only: {
-				group: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅᴀʟᴀᴍ ɢʀᴏᴜᴩ!*',
-				benned: '*ᴍᴀᴀꜰ ɴᴏᴍᴇʀ ᴋᴀᴍᴜ ᴋᴇ ʙᴀɴɴᴇᴅ ꜱɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴀɢᴀʀ ᴍᴇᴍʙᴜᴋᴀ ʙᴀɴɴᴇᴅ ᴀɴᴅᴀ*',
-				ownerG: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ɢʀᴏᴜᴩ!*',
+				group: 'Desculpe, este comando só pode ser usado em grupos!',
+				benned: 'Desculpe, seu número foi banido, por favor contate o dono para rever seu ban',
+				ownerG: 'Desculpe, este comando só pode ser usado pelo grupo proprietário!',
 				ownerB: 'Desculpe, este comando só pode ser usado pelo proprietário do bot! ',
-				premium: '*ᴍᴀᴀꜰ ꜰɪᴛᴜʀ ɪɴɪ ᴋʜᴜꜱᴜꜱ ᴜꜱᴇʀ ᴩʀᴇᴍɪᴜᴍ!!*',
+				premium: 'Desculpe, este recurso é especificamente para usuários premium!',
 				userB: `Oi ${pushname2} você não está registrado no banco de dados, digite \n${prefix}daftar`,
-				admin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴩ!*',
-				Badmin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ!*',
+				admin: 'Desculpe, este comando só pode ser usado por adm de grupo!',
+				Badmin: 'Desculpe, este comando só pode ser usado quando o bot é adm!',
 				}
 			}
 
