@@ -35,9 +35,7 @@ Follow The Steps Below!
 
 ```bash
 > termux-setup-storage
-(after that tap on permission)
-> pkg update -y
-> pkg upgrade -y
+> pkg update && pkg upgrade -y
 > pkg install python -y
 > pkg install git -y
 > git clone https://github.com/maicosilver/botmod7
