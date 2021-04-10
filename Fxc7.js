@@ -964,7 +964,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 						})
 					} else {
-						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
+						reply(`Envie uma imagem com a legenda ${prefix}sticker ou marque uma imagem que foi enviada com a legenda`)
 					}
 					break 
 					case 'trigger':
