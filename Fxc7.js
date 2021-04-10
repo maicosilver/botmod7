@@ -4644,7 +4644,7 @@ case 'nping':
 		break 
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-					reply(`Comando errado, verifique e tente novamente`)
+					reply(`Comando errado, revise-o e tente novamente`)
 				}
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
