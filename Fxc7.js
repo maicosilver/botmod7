@@ -330,7 +330,7 @@ async function starts() {
 				wait: '*⏳ em processo...*',
 				success: '*ꜱᴜᴋꜱᴇꜱ...*',
 				error: {
-				 bug: '*Terjadi Kesalahan Coba Hubungi Owner Untuk Melaporkan Kesalahan*',
+				 bug: 'Ocorreu um erro Tente entrar em contato com o proprietário para relatar um erro',
 				stick: ' falhou, ocorreu um erro ao converter a imagem em sticker\ntente repeti-lo com a foto de resposta que foi enviada',
 				Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
 				},
@@ -686,7 +686,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 		case 'daftar':
 		case 'verify':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
+					if (isUser) return reply('Você ja foi registrado!')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -3383,7 +3383,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					ran= getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply(' Gagal, pada saat mengkonversi sticker ke gambar ')
+						if (err) return reply(' Falha ao converter sticker em imagem! ')
 						buffer = fs.readFileSync(ran)
 						costum(buffer, image, FarhanGans, FarhanGans2)
 						fs.unlinkSync(ran)
@@ -4644,7 +4644,7 @@ case 'nping':
 		break 
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-					reply(`Maaf kak, Command Salah Coba Periksa Kembali`)
+					reply(`Comando errado, verifique e tente novamente`)
 				}
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
