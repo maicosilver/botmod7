@@ -4182,7 +4182,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					  ran = getRandom('.webp')
 					  exec(`ffmpeg -i ${anum} ${ran}`, (err) => {
 					    fs.unlinkSync(anum)
-					    if (err) return reply('Gagal, pada saat mengkonversi sticker ke Video')
+					    if (err) return reply('Falha ao converter o adesivo em vídeo')
 					    buffer = fs.readFileSync(ran)
 					    frhan.sendMessage(from, buffer, video, {quoted: mek, caption: 'Buat apa sii..'})
 					    fs.unlinkSync(ran)
