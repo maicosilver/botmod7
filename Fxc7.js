@@ -330,7 +330,7 @@ async function starts() {
 				wait: '*⏳ em processo...*',
 				success: 'sucesso...',
 				error: {
-				 bug: 'Ocorreu um erro Tente entrar em contato com o proprietário para relatar um erro',
+				 bug: 'Ocorreu um erro! Tente entrar em contato com o proprietário para relatar um erro',
 				stick: ' falhou, ocorreu um erro ao converter a imagem em sticker\ntente repeti-lo com a foto de resposta que foi enviada',
 				Iv: 'Desculpe, link inválido!'
 				},
