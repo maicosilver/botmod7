@@ -651,7 +651,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Gagal mengkonversi audio ke ptt')
+						if (err) return reply('Falha ao converter áudio para ptt')
 						topt = fs.readFileSync(ran)
 						frhan.sendMessage(from, topt, audio, {mimetype: 'audio/mp4', quoted: mek, ptt:true})
 						})
