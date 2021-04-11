@@ -3255,8 +3255,8 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Yang mau di add siapa??')
-					if (args[0].startsWith('08')) return reply('Gunakan kode negara Gan')
+					if (args.length < 1) return reply('Digite o número de quem você deseja adicionar!')
+					if (args[0].startsWith('08')) return reply('Use o código do país!')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						frhan.groupAdd(from, [num])
