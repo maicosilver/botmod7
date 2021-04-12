@@ -1443,8 +1443,8 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (args.length < 1) return frhan.sendMessage(from, 'Kode Bahasanya???', text, {quoted: mek})
-				if (args.length < 2) return frhan.sendMessage(from, 'Text Yg Mau Di translate??', text, {quoted: mek})
+				if (args.length < 1) return frhan.sendMessage(from, 'Qual o código de idioma?', text, {quoted: mek})
+				if (args.length < 2) return frhan.sendMessage(from, 'Qual texto você quer traduzir??', text, {quoted: mek})
 				ts = body.slice(11)
 				try {
 				kode = ts.split("/")[0]
