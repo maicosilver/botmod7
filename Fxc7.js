@@ -548,7 +548,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 			switch(command) { 
 		case 'mutualan':
 			if (!isUser) return reply(mess.only.userB)
-			if (isGroup) return  reply( 'Command ini tidak bisa digunakan di dalam grup,silahkan gunakan di private chat bot')
+			if (isGroup) return  reply( 'Este comando so pode ser usado em um chat privado com o bot')
 			const anug = fs.readFileSync('./database/json/user.json')
 			const anugJson = JSON.parse(anug)
 			const rondIndox = Math.floor(Math.random() * anugJson.length)
@@ -561,7 +561,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 		break
 		case 'next':
 			if (!isUser) return reply(mess.only.userB)
-			if (isGroup) return  reply( 'Command ini tidak bisa digunakan di dalam grup,silahkan gunakan di private chat bot')
+			if (isGroup) return  reply( 'Este comando so pode ser usado em um chat privado com o bot')
 			const aanug = fs.readFileSync('./database/json/user.json')
 			const aanugJson = JSON.parse(aanug)
 			const rondIndoxx = Math.floor(Math.random() * aanugJson.length)
