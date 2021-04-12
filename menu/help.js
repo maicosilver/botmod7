@@ -7,24 +7,24 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 
 ╭─────≽「 REGULAMENTO ${name} 」
 ┴
-┣⊱>  NAMA USER: ${pushname2}
+┣⊱>  NOME DO USUÁRIO: ${pushname2}
 ┣⊱>  CEK PREMIUM: ${premi}
-┣⊱>  LIMIT: ${limitt} perhari
+┣⊱>  LIMITE: ${limitt} perhari
 │
-┣⊱>  NAMA GRUP: ${groupName}
-┣⊱>  MODE WELCOME: ${Welcomee}
-┣⊱>  MODE SIMI: ${Simihh}
-┣⊱>  MODE ANIME: ${ModeAnime}
-┣⊱>  MODE NSFW: ${Nsfww}
-┣⊱>  MODE ANTI BADWORD: ${BadWordd}
-┣⊱>  MODE ANTI LINK: ${AntiLinkk}
-┣⊱>  MODE ANTI VIRTEX: ${AntiVirtexx}
+┣⊱>  NOME DO GRUPO: ${groupName}
+┣⊱>  MODO WELCOME: ${Welcomee}
+┣⊱>  MODO SIMI: ${Simihh}
+┣⊱>  MODO ANIME: ${ModeAnime}
+┣⊱>  MODO NSFW: ${Nsfww}
+┣⊱>  MODO ANTI PALAVRÃO: ${BadWordd}
+┣⊱>  MODO ANTI LINK: ${AntiLinkk}
+┣⊱>  MODO ANTI VIRTEX: ${AntiVirtexx}
 │
-┣⊱>  JAM: ${jam} WIB
-┣⊱>  TANGGAL: ${tanggal}
-┣⊱>  AKTIF: ${kyun(uptime)}
-┣⊱>  VERSION: 0.0.0
-┣⊱>  USER TERDAFTAR: ${user.length} User
+┣⊱>  HORA: ${jam} WIB
+┣⊱>  DATA: ${tanggal}
+┣⊱>  ATIVO: ${kyun(uptime)}
+┣⊱>  VERSÃO: 0.0.0
+┣⊱>  USUÁRIOS REGISTRADOS: ${user.length} User
 ┬
 ╰────────────────────────
 
@@ -33,33 +33,33 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 ┠─≽ ${prefix}mutualan
 │ Bate-papo aleatório de amigos
 ┠─≽ ${prefix}report lapor bug
-│ Untuk Melaporkan Bug Ke Owner
+│ Para relatar bugs ao proprietário
 ┠─≽ ${prefix}info
-│ Untuk Menampilkan Info Bot
+│ Para exibir informações do bot
 ┠─≽ ${prefix}donasi
-│ Jika Berkenan Untuk Donasi
+│ Se você deseja doar
 ┠─≽ ${prefix}owner
-│ Bot Mengirimkan Nomer Owner
+│ Número do proprietário do bot
 ┠─≽ ${prefix}speed
-│ Twsting Respon Bot
+│ Teste de resposta do bot
 ┠─≽ ${prefix}daftar
-│ Untuk Mendaftar Yg Belom Terdaftar
+│ Para se registrar no banco de dados
 ┠─≽ ${prefix}limit
-│ Untuk Cek Limit Anda
+│ Para verificar o seu limite
 ┠─≽ ${prefix}blocklist
-│ Check Kontak Kontak Yg Diblock
+│ Verifique os contatos que estão bloqueados
 ┠─≽ ${prefix}banlist
-│ Check Kontak Yg Dibanned
+│ Verificar contatos banidos
 ┠─≽ ${prefix}premiumlist
-│ Menampilkan list user premium
+│ Exibe uma lista de usuários premium
 ┠─≽ ${prefix}bahasa
-│ Untuk Fitur text to speech
+│ Para o recurso de texto para fala
 ┠─≽ ${prefix}wame
-│ Create Link Nomer WA Anda
+│ Crie um link para o seu número WA
 ┠─≽ ${prefix}cekpremium
-│ Check expired title premium anda
+│ Verifique seu título premium expirado
 ┠─≽ ${prefix}listbadword
-│ mengirimkan list badword
+│ Enviar uma lista de palavrões
 ┬
 ╰────────────────────────
 
