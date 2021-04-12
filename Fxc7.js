@@ -340,7 +340,7 @@ async function starts() {
 				ownerG: 'Desculpe, este comando só pode ser usado pelo grupo proprietário!',
 				ownerB: 'Desculpe, este comando só pode ser usado pelo proprietário do bot! ',
 				premium: 'Desculpe, este recurso é especificamente para usuários premium!',
-				userB: `Oi ${pushname2} você não está registrado no banco de dados, digite \n${prefix}daftar`,
+				userB: `Oi ${pushname2} você não está registrado no banco de dados, digite \n${prefix}registrar`,
 				admin: 'Desculpe, este comando só pode ser usado pelos adm do grupo!',
 				Badmin: 'Desculpe, este comando só pode ser usado quando o bot é adm!',
 				}
@@ -684,7 +684,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					await limitAdd(sender)
 				break 
 		case 'daftar':
-		case 'verify':
+		case 'registrar':
 					frhan.updatePresence(from, Presence.composing)
 					if (isUser) return reply('Você ja foi registrado!')
 					if (isBanned) return reply(mess.only.benned)
