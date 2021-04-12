@@ -1419,9 +1419,9 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isUser) return reply(mess.only.userB)
 				
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
+				if (args.length < 1) return frhan.sendMessage(from, 'Qual código de idioma?\n Se você não sabe o código do idioma, basta digitar ${prefix}bahasa', text, {quoted: mek})
 				const gtts = require('./lib/gtts')(args[0])
-				if (args.length < 2) return frhan.sendMessage(from, 'Textnya mana gan?', text, {quoted: mek})
+				if (args.length < 2) return frhan.sendMessage(from, 'Cadê o texto?', text, {quoted: mek})
 				dtt = body.slice(8)
 				ranm = getRandom('.mp3')
 				rano = getRandom('.ogg')
