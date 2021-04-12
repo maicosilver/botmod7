@@ -683,8 +683,8 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					await limitAdd(sender)
 				break 
-		case 'daftar':
 		case 'registrar':
+		case 'daftar':
 					frhan.updatePresence(from, Presence.composing)
 					if (isUser) return reply('Você ja foi registrado!')
 					if (isBanned) return reply(mess.only.benned)
