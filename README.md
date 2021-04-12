@@ -34,6 +34,7 @@
 Follow The Steps Below!
 
 ```bash
+apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y
 > termux-setup-storage
 > pkg update && pkg upgrade -y
 > pkg install python -y
