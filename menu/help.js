@@ -3,101 +3,92 @@ const a = '```'
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal, groupName, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx) => { 
 	return `
 	
-${a}Follow My Instagram${a}
-${instagram}
+PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 
-
-
-
-${a}My Youtube${a}
-${yt}
-
-${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
-
-╭─────≽「 *REGULATION ${name}* 」
+╭─────≽「 REGULAMENTO ${name} 」
 ┴
-┣⊱>  ${a}NAMA USER:${a} *${pushname2}*
-┣⊱>  ${a}CEK PREMIUM:${a} ${premi}
-┣⊱>  ${a}LIMIT:${a} *${limitt} perhari*
+┣⊱>  NAMA USER: ${pushname2}
+┣⊱>  CEK PREMIUM: ${premi}
+┣⊱>  LIMIT: ${limitt} perhari
 │
-┣⊱>  ${a}NAMA GRUP:${a} *${groupName}*
-┣⊱>  ${a}MODE WELCOME:${a} *${Welcomee}*
-┣⊱>  ${a}MODE SIMI:${a} *${Simihh}*
-┣⊱>  ${a}MODE ANIME:${a} *${ModeAnime}*
-┣⊱>  ${a}MODE NSFW:${a} *${Nsfww}*
-┣⊱>  ${a}MODE ANTI BADWORD:${a} *${BadWordd}*
-┣⊱>  ${a}MODE ANTI LINK:${a} *${AntiLinkk}*
-┣⊱>  ${a}MODE ANTI VIRTEX:${a} *${AntiVirtexx}*
+┣⊱>  NAMA GRUP: ${groupName}
+┣⊱>  MODE WELCOME: ${Welcomee}
+┣⊱>  MODE SIMI: ${Simihh}
+┣⊱>  MODE ANIME: ${ModeAnime}
+┣⊱>  MODE NSFW: ${Nsfww}
+┣⊱>  MODE ANTI BADWORD: ${BadWordd}
+┣⊱>  MODE ANTI LINK: ${AntiLinkk}
+┣⊱>  MODE ANTI VIRTEX: ${AntiVirtexx}
 │
-┣⊱>  ${a}JAM:${a} *${jam} WIB*
-┣⊱>  ${a}TANGGAL:${a} *${tanggal}*
-┣⊱>  ${a}AKTIF:${a} ${kyun(uptime)}
-┣⊱>  ${a}VERSION:${a} *0.0.0*
-┣⊱>  ${a}USER TERDAFTAR:${a} *${user.length} User*
+┣⊱>  JAM: ${jam} WIB
+┣⊱>  TANGGAL: ${tanggal}
+┣⊱>  AKTIF: ${kyun(uptime)}
+┣⊱>  VERSION: 0.0.0
+┣⊱>  USER TERDAFTAR: ${user.length} User
 ┬
 ╰────────────────────────
 
-╭─────≽「 *ABOUT ${name}* 」
+╭─────≽「 ABOUT ${name} 」
 ┴
-┠─≽ *${prefix}mutualan*
-│ ${a}Random Teman Chat${a}
-┠─≽ *${prefix}report lapor bug*
-│ ${a}Untuk Melaporkan Bug Ke Owner${a}
-┠─≽ *${prefix}info*
-│ ${a}Untuk Menampilkan Info Bot${a}
-┠─≽ *${prefix}donasi*
-│ ${a}Jika Berkenan Untuk Donasi${a}
-┠─≽ *${prefix}owner*
-│ ${a}Bot Mengirimkan Nomer Owner${a}
-┠─≽ *${prefix}speed*
-│ ${a}Twsting Respon Bot${a}
-┠─≽ *${prefix}daftar*
-│ ${a}Untuk Mendaftar Yg Belom Terdaftar${a}
-┠─≽ *${prefix}limit*
-│ ${a}Untuk Cek Limit Anda${a}
-┠─≽ *${prefix}blocklist*
-│ ${a}Check Kontak Kontak Yg Diblock${a}
-┠─≽ *${prefix}banlist*
-│ ${a}Check Kontak Yg Dibanned${a}
-┠─≽ *${prefix}premiumlist*
-│ ${a}Menampilkan list user premium${a}
-┠─≽ *${prefix}bahasa*
-│ ${a}Untuk Fitur text to speech${a}
-┠─≽ *${prefix}wame*
-│ ${a}Create Link Nomer WA Anda${a}
-┠─≽ *${prefix}cekpremium*
-│ ${a}Check expired title premium anda${a}
-┠─≽ *${prefix}listbadword*
-│ ${a}mengirimkan list badword${a}
+┠─≽ ${prefix}mutualan
+│ Bate-papo aleatório de amigos
+┠─≽ ${prefix}report lapor bug
+│ Untuk Melaporkan Bug Ke Owner
+┠─≽ ${prefix}info
+│ Untuk Menampilkan Info Bot
+┠─≽ ${prefix}donasi
+│ Jika Berkenan Untuk Donasi
+┠─≽ ${prefix}owner
+│ Bot Mengirimkan Nomer Owner
+┠─≽ ${prefix}speed
+│ Twsting Respon Bot
+┠─≽ ${prefix}daftar
+│ Untuk Mendaftar Yg Belom Terdaftar
+┠─≽ ${prefix}limit
+│ Untuk Cek Limit Anda
+┠─≽ ${prefix}blocklist
+│ Check Kontak Kontak Yg Diblock
+┠─≽ ${prefix}banlist
+│ Check Kontak Yg Dibanned
+┠─≽ ${prefix}premiumlist
+│ Menampilkan list user premium
+┠─≽ ${prefix}bahasa
+│ Untuk Fitur text to speech
+┠─≽ ${prefix}wame
+│ Create Link Nomer WA Anda
+┠─≽ ${prefix}cekpremium
+│ Check expired title premium anda
+┠─≽ ${prefix}listbadword
+│ mengirimkan list badword
 ┬
 ╰────────────────────────
 
-╭──≽「 *FITUR SIMPLE ${name}* 」
+╭──≽「 RECURSOS SIMPLES ${name} 」
 ┴
-┠─≽ *${prefix}menucreator*
-│ ${a}Fitur Image Maker${a}
-┠─≽ *${prefix}menumedia*
-│ ${a}Fitur Stalking & Downloader${a}
-┠─≽ *${prefix}menugrup*
-│ ${a}Fitur Khusus Di group${a}
-┠─≽ *${prefix}menuothers*
-│ ${a}Fitur Random${a}
-┠─≽ *${prefix}menuprimbon*
-│ ${a}Fitur primbon Jodoh, DLL${a}
-┠─≽ *${prefix}menuinformasi*
-│ ${a}Fitur Informasi cuaca, DLL${a}
-┠─≽ *${prefix}menufun*
-│ ${a}Fitur Untuk Game Bersama Teman${a}
-┠─≽ *${prefix}menuscrapper*
-│ ${a}Fitur scrapper${a}
-┠─≽ *${prefix}menuencrypt*
-│ ${a}Fitur Encrypt & Decrypt${a}
-┠─≽ *${prefix}menuspam*
-│ ${a}Fitur Spam${a}
-┠─≽ *${prefix}menupremium*
-│ ${a}Fitur Untuk User Premium${a}
-┠─≽ *${prefix}menuowner*
-│ ${a}Fitur Khusus Owner${a}
+┠─≽  ${prefix}menucreator
+│ Recurso Image Maker
+┠─≽  ${prefix}menumedia
+│ Recurso Stalking & Downloader
+┠─≽  ${prefix}menugrup
+│ Recursos especiais no grupo
+┠─≽  ${prefix}menuothers
+│ Recurso aleatório
+┠─≽  ${prefix}menuprimbon
+│ Recursos de primbon correspondentes, etc
+┠─≽  ${prefix}menuinformasi
+│ Recurso de informações meteorológicas, etc
+┠─≽  ${prefix}menufun
+│ Recursos para jogos com amigos
+┠─≽  ${prefix}menuscrapper
+│ Recurso de scrapper
+┠─≽  ${prefix}menuencrypt
+│ Recurso de criptografar e descriptografar
+┠─≽  ${prefix}menuspam
+│ Recurso de spam
+┠─≽  ${prefix}menupremium
+│ Recursos para usuários premium
+┠─≽  ${prefix}menuowner
+│ Características especiais do proprietário
 ┬
 ╰────────────────────────
 
