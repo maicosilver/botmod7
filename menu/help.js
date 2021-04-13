@@ -42,7 +42,7 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 │ Número do proprietário do bot
 ┠─≽ ${prefix}speed
 │ Teste de resposta do bot
-┠─≽ ${prefix}daftar
+┠─≽ ${prefix}registrar
 │ Para se registrar no banco de dados
 ┠─≽ ${prefix}limit
 │ Para verificar o seu limite
