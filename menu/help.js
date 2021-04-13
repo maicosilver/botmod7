@@ -48,7 +48,7 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 │ Para verificar o seu limite
 ┠─≽ ${prefix}blocklist
 │ Verifique os contatos que estão bloqueados
-┠─≽ ${prefix}banlist
+┠─≽ ${prefix}listabanbot
 │ Verificar contatos banidos
 ┠─≽ ${prefix}premiumlist
 │ Exibe uma lista de usuários premium
