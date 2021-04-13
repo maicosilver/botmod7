@@ -3282,7 +3282,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						mentions(teks, mentioned, true)
 						frhan.groupRemove(from, mentioned)
 					} else {
-						mentions(`Você sera removido por descumprir as regras grupo... @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`Você sera removido por descumprir as regras do grupo... @${mentioned[0].split('@')[0]}`, mentioned, true)
 						frhan.groupRemove(from, mentioned)
 					}
 					break 
