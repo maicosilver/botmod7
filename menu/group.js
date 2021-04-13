@@ -69,7 +69,7 @@ return `
 ┠≽ *${prefix}infogrup*
 ┠≽ *${prefix}add 628xxxxxxxxxx*
 ┠≽ *${prefix}ban @mentioned*
-┠≽ *${prefix}kicktime @mentioned*
+┠≽ *${prefix}bantime @mentioned*
 ┠≽ *${prefix}promote @mentioned*
 ┠≽ *${prefix}demote @mentioned*
 ┠≽ *${prefix}setname*
