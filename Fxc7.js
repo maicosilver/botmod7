@@ -3262,10 +3262,10 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						frhan.groupAdd(from, [num])
 					} catch (e) {
 						console.log('Error :', e)
-						reply('Gagal menambahkan target, mungkin karena di private')
+						reply('Falha ao adicionar destino, talvez porque é privado')
 					}
 					break
-			    case 'kick':
+			    case 'ban':
 			    if (isBanned) return reply(mess.only.benned)    
 			    if (!isUser) return reply(mess.only.userB)
 			    
@@ -3275,14 +3275,14 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Perintah di terima, mengeluarkan :\n'
+						teks = 'Você sera removido por descumprir as regras grupo...\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
 						mentions(teks, mentioned, true)
 						frhan.groupRemove(from, mentioned)
 					} else {
-						mentions(`Perintah di terima, mengeluarkan : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`Você sera removido por descumprir as regras grupo... @${mentioned[0].split('@')[0]}`, mentioned, true)
 						frhan.groupRemove(from, mentioned)
 					}
 					break 
