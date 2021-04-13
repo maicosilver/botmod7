@@ -32,8 +32,8 @@ return `
 ┠≽ *${prefix}chatlist*
 ┠≽ *${prefix}bc*
 ┠≽ *${prefix}bcgc*
-┠≽ *${prefix}ban*
-┠≽ *${prefix}unban*
+┠≽ *${prefix}banbot*
+┠≽ *${prefix}desbanirdobot*
 ┠≽ *${prefix}block*
 ┠≽ *${prefix}unblock*
 ┠≽ *${prefix}clearall*
