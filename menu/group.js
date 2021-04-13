@@ -68,7 +68,7 @@ return `
 ┠≽ *${prefix}setpp*
 ┠≽ *${prefix}infogrup*
 ┠≽ *${prefix}add 628xxxxxxxxxx*
-┠≽ *${prefix}kick @mentioned*
+┠≽ *${prefix}ban @mentioned*
 ┠≽ *${prefix}kicktime @mentioned*
 ┠≽ *${prefix}promote @mentioned*
 ┠≽ *${prefix}demote @mentioned*
