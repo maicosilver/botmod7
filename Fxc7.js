@@ -821,7 +821,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (!isOwner) return reply(mess.only.ownerB)
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 			        ban = mentioned
-					reply(`banido com sucesso : ${ban}`)
+					reply(`banido com sucesso do acesso ao bot : ${ban}`)
 					break
 				case 'desbanirdobot':
 					if (!isOwner)return reply(mess.only.ownerB)
