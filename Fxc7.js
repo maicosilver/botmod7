@@ -3331,7 +3331,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						mentions(teks, mentioned, true)
 						frhan.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`Perintah di terima, @${mentioned[0].split('@')[0]} Kamu Menjadi Admin Di Group *${groupMetadata.subject}*`, mentioned, true)
+						mentions(`O @${mentioned[0].split('@')[0]} agora é um administrador do grupo: *${groupMetadata.subject}*`, mentioned, true)
 						frhan.groupMakeAdmin(from, mentioned)
 					}
 					break
