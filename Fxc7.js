@@ -3286,7 +3286,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						frhan.groupRemove(from, mentioned)
 					}
 					break 
-				case 'kicktime':
+				case 'bantime':
 					if (isBanned) return reply(mess.only.benned)
 					if (!isUser) return reply(mess.only.userB)
 					
@@ -3311,7 +3311,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					frhan.sendMessage(from, 'Sonhei com vc hoje 😏...', text)
 					}, 2500)
 					setTimeout( () => {
-					reply('Comando em execução!...')
+					reply('Comando em execução...')
 					}, 0)
 					break
 				case 'promote':
