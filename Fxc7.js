@@ -807,7 +807,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					teks += `Total : ${blocked.length}`
 					frhan.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
 					break 
-				case 'banlist':
+				case 'listabanbot':
 				ben = '```List Banned``` :\n'
 					for (let banned of ban) {
 						ben += `~> @${banned.split('@')[0]}\n`
@@ -815,19 +815,19 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					ben += `Total : ${ban.length}`
 					frhan.sendMessage(from, ben.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": ban}})
 					break
-				case 'ban':
+				case 'banbot':
 					frhan.updatePresence(from, Presence.composing) 
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 			        ban = mentioned
-					reply(`berhasil banned : ${ban}`)
+					reply(`banido com sucesso : ${ban}`)
 					break
-				case 'unban':
+				case 'desbanirdobot':
 					if (!isOwner)return reply(mess.only.ownerB)
 					bnnd = body.slice(8)
 					ban.splice(`${bnnd}@s.whatsapp.net`, 1)
-					reply(`Nomor wa.me/${bnnd} telah di unban!`)
+					reply(`O número wa.me/${bnnd} foi desbanido do acesso ao bot!`)
 					break
 				case 'block':
 				 frhan.updatePresence(from, Presence.composing) 
