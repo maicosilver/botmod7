@@ -3314,7 +3314,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					reply('Comando em execução...')
 					}, 0)
 					break
-				case 'promote':
+				case 'daradm':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				
@@ -3341,7 +3341,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					frhan.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 					break
-			    case 'demote':
+			    case 'tiraradm':
 			    if (isBanned) return reply(mess.only.benned)    
 			    if (!isUser) return reply(mess.only.userB)
 			    
@@ -3358,7 +3358,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						mentions(teks, mentioned, true)
 						frhan.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`Perintah di terima, Menurunka : @${mentioned[0].split('@')[0]} Menjadi Member`, mentioned, true)
+						mentions(` @${mentioned[0].split('@')[0]} Foi rebaixado para membro comum`, mentioned, true)
 						frhan.groupDemoteAdmin(from, mentioned)
 					}
 					break
