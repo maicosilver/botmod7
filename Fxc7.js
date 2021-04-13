@@ -3296,22 +3296,22 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					setTimeout( () => {
-					frhan.sendMessage(from, 'Yok Sama" Al-fatihah', text)
+					frhan.sendMessage(from, '🤡', text)
 					}, 8000)
 					setTimeout( () => {
-					reply('sukses min:D')
+					reply('Concluido!')
 					}, 7000)
 					setTimeout( () => {
 					frhan.groupRemove(from, mentioned)
 					}, 6000)
 					setTimeout( () => {
-					frhan.sendMessage(from, `Bismilah Kick @${mentioned[0].split('@')[0]}`, text) // ur cods
+					frhan.sendMessage(from, `Você sera removido @${mentioned[0].split('@')[0]}`, text) // ur cods
 					}, 5000)
 					setTimeout( () => {
-					frhan.sendMessage(from, 'Asikkk Dapet Makanan nihh:D', text)
+					frhan.sendMessage(from, 'Sonhei com vc hoje 😏...', text)
 					}, 2500)
 					setTimeout( () => {
-					reply('Perintah Diterima min:D')
+					reply('Comando em execução!...')
 					}, 0)
 					break
 				case 'promote':
