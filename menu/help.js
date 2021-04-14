@@ -25,7 +25,7 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 ┣⊱>  VERSÃO: 0.0.0
 ┣⊱>  USUÁRIOS REGISTRADOS: ${user.length} User
 ┬
-╰────────────────────────
+╰──────────────────
 ╭─────≽「 ABOUT ${name} 」
 ┴
 ≽ ${prefix}mutualan│chat aleatório
@@ -44,7 +44,7 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 ≽ ${prefix}cekpremium│Se foi expirado
 ≽ ${prefix}listbadword│Palavrões
 ┬
-╰────────────────────────
+╰──────────────────
 ╭──≽「 RECURSOS SIMPLES ${name} 」
 ┴
 ≽ ${prefix}menucreator│Img e Maker
@@ -60,7 +60,7 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 ≽ ${prefix}menupremium│Premium
 ≽ ${prefix}menuowner│Proprietário
 ┬
-╰────────────────────────
+╰──────────────────
 ╭────≽「 *SUPPORT ${name}* 」
 ┴
 │➲ ${a}O BOT${a}
