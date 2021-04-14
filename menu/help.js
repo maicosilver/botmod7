@@ -2,65 +2,96 @@
 const a = '```'
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal, groupName, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx) => { 
 	return `
-PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
+	
+${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 
-╭─────≽「 REGULAMENTO ${name} 」
+╭─────≽「 *REGULATION ${name}* 」
 ┴
-┣⊱>  NOME DO USUÁRIO: ${pushname2}
-┣⊱>  CEK PREMIUM: ${premi}
-┣⊱>  LIMITE: ${limitt} perhari
+┣⊱>  ${a}NAMA USER:${a} *${pushname2}*
+┣⊱>  ${a}CEK PREMIUM:${a} ${premi}
+┣⊱>  ${a}LIMIT:${a} *${limitt} perhari*
 │
-┣⊱>  NOME DO GRUPO: ${groupName}
-┣⊱>  MODO WELCOME: ${Welcomee}
-┣⊱>  MODO SIMI: ${Simihh}
-┣⊱>  MODO ANIME: ${ModeAnime}
-┣⊱>  MODO NSFW: ${Nsfww}
-┣⊱>  MODO ANTI PALAVRÃO: ${BadWordd}
-┣⊱>  MODO ANTI LINK: ${AntiLinkk}
-┣⊱>  MODO ANTI VIRTEX: ${AntiVirtexx}
+┣⊱>  ${a}NAMA GRUP:${a} *${groupName}*
+┣⊱>  ${a}MODE WELCOME:${a} *${Welcomee}*
+┣⊱>  ${a}MODE SIMI:${a} *${Simihh}*
+┣⊱>  ${a}MODE ANIME:${a} *${ModeAnime}*
+┣⊱>  ${a}MODE NSFW:${a} *${Nsfww}*
+┣⊱>  ${a}MODE ANTI BADWORD:${a} *${BadWordd}*
+┣⊱>  ${a}MODE ANTI LINK:${a} *${AntiLinkk}*
+┣⊱>  ${a}MODE ANTI VIRTEX:${a} *${AntiVirtexx}*
 │
-┣⊱>  HORA: ${jam} WIB
-┣⊱>  DATA: ${tanggal}
-┣⊱>  ATIVO: ${kyun(uptime)}
-┣⊱>  VERSÃO: 0.0.0
-┣⊱>  USUÁRIOS REGISTRADOS: ${user.length} User
+┣⊱>  ${a}JAM:${a} *${jam} WIB*
+┣⊱>  ${a}TANGGAL:${a} *${tanggal}*
+┣⊱>  ${a}AKTIF:${a} ${kyun(uptime)}
+┣⊱>  ${a}VERSION:${a} *0.0.0*
+┣⊱>  ${a}USER TERDAFTAR:${a} *${user.length} User*
 ┬
-╰──────────────────
-╭─────≽「 ABOUT ${name} 」
+╰────────────────────────
+
+╭─────≽「 *ABOUT ${name}* 」
 ┴
-≽ ${prefix}mutualan│chat aleatório
-≽ ${prefix}report lapor bug│Relata bugs
-≽ ${prefix}info│Informações do bot
-≽ ${prefix}donasi│Se você deseja doar
-≽ ${prefix}owner│Número do criador
-≽ ${prefix}speed│Velocidade do bot
-≽ ${prefix}registrar│Permite usar o bot
-≽ ${prefix}limit│Verifica o seu limite
-≽ ${prefix}blocklist│Verifica bloqueados
-≽ ${prefix}listabanbot│Verifica banidos
-≽ ${prefix}premiumlist│Lista premium
-≽ ${prefix}bahasa│Para texto e fala
-≽ ${prefix}wame│Link WA do número
-≽ ${prefix}cekpremium│Se foi expirado
-≽ ${prefix}listbadword│Palavrões
+┠─≽ *${prefix}mutualan*
+│ ${a}Random Teman Chat${a}
+┠─≽ *${prefix}report lapor bug*
+│ ${a}Untuk Melaporkan Bug Ke Owner${a}
+┠─≽ *${prefix}info*
+│ ${a}Untuk Menampilkan Info Bot${a}
+┠─≽ *${prefix}donasi*
+│ ${a}Jika Berkenan Untuk Donasi${a}
+┠─≽ *${prefix}owner*
+│ ${a}Bot Mengirimkan Nomer Owner${a}
+┠─≽ *${prefix}speed*
+│ ${a}Twsting Respon Bot${a}
+┠─≽ *${prefix}daftar*
+│ ${a}Untuk Mendaftar Yg Belom Terdaftar${a}
+┠─≽ *${prefix}limit*
+│ ${a}Untuk Cek Limit Anda${a}
+┠─≽ *${prefix}blocklist*
+│ ${a}Check Kontak Kontak Yg Diblock${a}
+┠─≽ *${prefix}banlist*
+│ ${a}Check Kontak Yg Dibanned${a}
+┠─≽ *${prefix}premiumlist*
+│ ${a}Menampilkan list user premium${a}
+┠─≽ *${prefix}bahasa*
+│ ${a}Untuk Fitur text to speech${a}
+┠─≽ *${prefix}wame*
+│ ${a}Create Link Nomer WA Anda${a}
+┠─≽ *${prefix}cekpremium*
+│ ${a}Check expired title premium anda${a}
+┠─≽ *${prefix}listbadword*
+│ ${a}mengirimkan list badword${a}
 ┬
-╰──────────────────
-╭──≽「 RECURSOS SIMPLES ${name} 」
+╰────────────────────────
+
+╭──≽「 *FITUR SIMPLE ${name}* 」
 ┴
-≽ ${prefix}menucreator│Img e Maker
-≽ ${prefix}menumedia│Stalking & Down
-≽ ${prefix}menugrup│Para o grupo
-≽ ${prefix}menuothers│Sobre aleatório
-≽ ${prefix}menuprimbon│Sobre primbon
-≽ ${prefix}menuinformasi│Meteorologia
-≽ ${prefix}menufun│Para jogos
-≽ ${prefix}menuscrapper│Scrapper
-≽ ${prefix}menuencrypt│Criptografar
-≽ ${prefix}menuspam│Sobre spam
-≽ ${prefix}menupremium│Premium
-≽ ${prefix}menuowner│Proprietário
+┠─≽ *${prefix}menucreator*
+│ ${a}Fitur Image Maker${a}
+┠─≽ *${prefix}menumedia*
+│ ${a}Fitur Stalking & Downloader${a}
+┠─≽ *${prefix}menugrup*
+│ ${a}Fitur Khusus Di group${a}
+┠─≽ *${prefix}menuothers*
+│ ${a}Fitur Random${a}
+┠─≽ *${prefix}menuprimbon*
+│ ${a}Fitur primbon Jodoh, DLL${a}
+┠─≽ *${prefix}menuinformasi*
+│ ${a}Fitur Informasi cuaca, DLL${a}
+┠─≽ *${prefix}menufun*
+│ ${a}Fitur Untuk Game Bersama Teman${a}
+┠─≽ *${prefix}menuscrapper*
+│ ${a}Fitur scrapper${a}
+┠─≽ *${prefix}menuencrypt*
+│ ${a}Fitur Encrypt & Decrypt${a}
+┠─≽ *${prefix}menuspam*
+│ ${a}Fitur Spam${a}
+┠─≽ *${prefix}menupremium*
+│ ${a}Fitur Untuk User Premium${a}
+┠─≽ *${prefix}menuowner*
+│ ${a}Fitur Khusus Owner${a}
 ┬
-╰──────────────────
+╰────────────────────────
+
 ╭────≽「 *SUPPORT ${name}* 」
 ┴
 │➲ ${a}O BOT${a}
@@ -71,7 +102,7 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 │➲ ${a}PENYEDIA REST API${a}
 │➲ ${a}CONTENT CREATOR BOT WHATSAPP${a}
 ┬
-╰──────────────────
+╰──────≽ *Created © FXC7*`
 }
 
 exports.help = help
