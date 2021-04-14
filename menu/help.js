@@ -2,7 +2,6 @@
 const a = '```'
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal, groupName, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx) => { 
 	return `
-	
 PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 
 ╭─────≽「 REGULAMENTO ${name} 」
@@ -27,71 +26,41 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 ┣⊱>  USUÁRIOS REGISTRADOS: ${user.length} User
 ┬
 ╰────────────────────────
-
 ╭─────≽「 ABOUT ${name} 」
 ┴
-┠─≽ ${prefix}mutualan
-│ Bate-papo aleatório de amigos
-┠─≽ ${prefix}report lapor bug
-│ Para relatar bugs ao proprietário
-┠─≽ ${prefix}info
-│ Para exibir informações do bot
-┠─≽ ${prefix}donasi
-│ Se você deseja doar
-┠─≽ ${prefix}owner
-│ Número do proprietário do bot
-┠─≽ ${prefix}speed
-│ Teste de resposta do bot
-┠─≽ ${prefix}registrar
-│ Para se registrar no banco de dados
-┠─≽ ${prefix}limit
-│ Para verificar o seu limite
-┠─≽ ${prefix}blocklist
-│ Verifique os contatos que estão bloqueados
-┠─≽ ${prefix}listabanbot
-│ Verificar contatos banidos
-┠─≽ ${prefix}premiumlist
-│ Exibe uma lista de usuários premium
-┠─≽ ${prefix}bahasa
-│ Para o recurso de texto para fala
-┠─≽ ${prefix}wame
-│ Crie um link para o seu número WA
-┠─≽ ${prefix}cekpremium
-│ Verifique seu título premium expirado
-┠─≽ ${prefix}listbadword
-│ Enviar uma lista de palavrões
+≽ ${prefix}mutualan│chat aleatório
+≽ ${prefix}report lapor bug│Relata bugs
+≽ ${prefix}info│Informações do bot
+≽ ${prefix}donasi│Se você deseja doar
+≽ ${prefix}owner│Número do criador
+≽ ${prefix}speed│Velocidade do bot
+≽ ${prefix}registrar│Permite usar o bot
+≽ ${prefix}limit│Verifica o seu limite
+≽ ${prefix}blocklist│Verifica bloqueados
+≽ ${prefix}listabanbot│Verifica banidos
+≽ ${prefix}premiumlist│Lista premium
+≽ ${prefix}bahasa│Para texto e fala
+≽ ${prefix}wame│Link WA do número
+≽ ${prefix}cekpremium│Se foi expirado
+≽ ${prefix}listbadword│Palavrões
 ┬
 ╰────────────────────────
-
 ╭──≽「 RECURSOS SIMPLES ${name} 」
 ┴
-┠─≽  ${prefix}menucreator
-│ Recurso Image Maker
-┠─≽  ${prefix}menumedia
-│ Recurso Stalking & Downloader
-┠─≽  ${prefix}menugrup
-│ Recursos especiais no grupo
-┠─≽  ${prefix}menuothers
-│ Recurso aleatório
-┠─≽  ${prefix}menuprimbon
-│ Recursos de primbon correspondentes, etc
-┠─≽  ${prefix}menuinformasi
-│ Recurso de informações meteorológicas, etc
-┠─≽  ${prefix}menufun
-│ Recursos para jogos com amigos
-┠─≽  ${prefix}menuscrapper
-│ Recurso de scrapper
-┠─≽  ${prefix}menuencrypt
-│ Recurso de criptografar e descriptografar
-┠─≽  ${prefix}menuspam
-│ Recurso de spam
-┠─≽  ${prefix}menupremium
-│ Recursos para usuários premium
-┠─≽  ${prefix}menuowner
-│ Características especiais do proprietário
+≽ ${prefix}menucreator│Img e Maker
+≽ ${prefix}menumedia│Stalking & Down
+≽ ${prefix}menugrup│Para o grupo
+≽ ${prefix}menuothers│Sobre aleatório
+≽ ${prefix}menuprimbon│Sobre primbon
+≽ ${prefix}menuinformasi│Meteorologia
+≽ ${prefix}menufun│Para jogos
+≽ ${prefix}menuscrapper│Scrapper
+≽ ${prefix}menuencrypt│Criptografar
+≽ ${prefix}menuspam│Sobre spam
+≽ ${prefix}menupremium│Premium
+≽ ${prefix}menuowner│Proprietário
 ┬
 ╰────────────────────────
-
 ╭────≽「 *SUPPORT ${name}* 」
 ┴
 │➲ ${a}O BOT${a}
@@ -101,8 +70,6 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 │➲ ${a}MY TEAM FXC7 BOT${a}
 │➲ ${a}PENYEDIA REST API${a}
 │➲ ${a}CONTENT CREATOR BOT WHATSAPP${a}
-┬
-╰──────≽ *Created © FXC7*`
 }
 
 exports.help = help
