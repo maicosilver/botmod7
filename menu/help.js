@@ -70,6 +70,8 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 │➲ ${a}MY TEAM FXC7 BOT${a}
 │➲ ${a}PENYEDIA REST API${a}
 │➲ ${a}CONTENT CREATOR BOT WHATSAPP${a}
+┬
+╰──────────────────
 }
 
 exports.help = help
