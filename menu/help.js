@@ -60,17 +60,6 @@ PARA RECURSOS ATUALIZADOS DIGITE ${prefix}infobot
 ≽ ${prefix}menupremium│Premium
 ≽ ${prefix}menuowner│Proprietário
 ┬
-╰──────────────────
-╭────≽「 *SUPPORT ${name}* 」
-┴
-│➲ ${a}O BOT${a}
-│➲ ${a}M. HADI FIRMANSYA${a}
-│➲ ${a}DELIA AULIA${a}
-│➲ ${a}KEVIN DAVID${a}
-│➲ ${a}MY TEAM FXC7 BOT${a}
-│➲ ${a}PENYEDIA REST API${a}
-│➲ ${a}CONTENT CREATOR BOT WHATSAPP${a}
-┬
 ╰──────────────────`
 }
 
