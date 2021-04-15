@@ -84,16 +84,16 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ┠≽ *${prefix}ocr*
 ├── _Example: reply gambar dan caption ${prefix}ocr_
 ├───────────────────
-┠≽ *${prefix}slow*
-├── _Example: reply audio/video dan caption ${prefix}slow_
-┠≽ *${prefix}gemuk*
-├── _Example: reply audio/video dan caption ${prefix}gemuk_
-┠≽ *${prefix}tupai*
-├── _Example: reply audio/video dan caption ${prefix}tupai_
-┠≽ *${prefix}bass*
-├── _Example: reply audio/video dan caption ${prefix}bass_
-┠≽ *${prefix}toptt*
-├── _Example: reply audio/video dan caption ${prefix}toptt_
+≽ ${prefix}slow
+para audio/video digite ${prefix}slow
+≽ ${prefix}grave
+para audio/video digite ${prefix}grave
+≽ ${prefix}agudo
+para audio/video digite ${prefix}agudo
+≽ ${prefix}bass
+para audio/video digite ${prefix}bass
+≽ ${prefix}toptt
+para audio/video digite ${prefix}toptt
 ┬
 ╰──────────────────────────
 `
