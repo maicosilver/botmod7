@@ -696,7 +696,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					ppimg = 'https://i.ibb.co/Gp4H47k/7dba54f7e250.jpg'
 					}
 					const noSeri = createSerial(15)
-					captionnya = `╭─「 *REGISTRO DE USUÁRIO* 」\n│ \`\`\`O registro foi feito com sucesso\`\`\` \n│ \`\`\`SN: ${noSeri}\`\`\`\n│\n│\`\`\`Data ${date} ${time}\`\`\`\n│\`\`\`Nome: ${pushname2}\`\`\`\n│\`\`\`Número: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar o bot\`\`\`\n│\`\`\`por favor\`\`\`\n│\`\`\`digite ${prefix}help/menu\`\`\`\n│\`\`\`\n│Total de usuários: ${user.length} Pessoa\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *REGISTRO DE USUÁRIO* 」\n│ \`\`\`O registro foi feito com sucesso\`\`\` \n│ \`\`\`SN: ${noSeri}\`\`\`\n│\n│\`\`\`Data ${date} ${time}\`\`\`\n│\`\`\`Nome: ${pushname2}\`\`\`\n│\`\`\`Número: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar o bot\`\`\`\n│\`\`\`por favor\`\`\`\n│\`\`\`digite ${prefix}help/menu\`\`\`\n│\`\`\`\n│Total de usuários: ${user.length} Pessoas\`\`\`\n╰─────────────────────────`
 					daftarimg = await getBuffer(ppimg)
 					frhan.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break
