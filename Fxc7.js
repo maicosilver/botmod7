@@ -4175,7 +4175,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					break 
 					case 'tovideo':
 					  if (!isUser) return reply(mess.only.userB)
-					  if (!isQuotedSticker) return reply('*☒* Reply stikernya')
+					  if (!isQuotedSticker) return reply('Erro, tente novamente com um sticker')
 					  reply(mess.wait)
 					  anumedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					  anum = await frhan.downloadAndSaveMediaMessage(anumedia)
