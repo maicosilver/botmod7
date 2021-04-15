@@ -620,7 +620,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						fs.unlinkSync(ran)
 					})
 				break
-				case 'gemuk':
+				case 'grave':
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await frhan.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
@@ -632,7 +632,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						fs.unlinkSync(ran)
 					})
 				break
-              case 'tupai':
+              case 'agudo':
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await frhan.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
