@@ -1084,7 +1084,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 				break 
-				case 'wasted':
+				case 'vermelho':
 					if (!isUser) return reply(mess.only.userB)
 					
 					if (isBanned) return reply (mess.only.benned)
