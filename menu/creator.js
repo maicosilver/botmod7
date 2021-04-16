@@ -11,7 +11,7 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ┣⊱  ${a}VERSION:${a} *0.0.0*
 ┣⊱  ${a}USER TERDAFTAR:${a} *${user.length} User*
 ┬
-╰────────────────────────
+╰──────────────────
 
 ╭─────≽「 *CREATOR MENU* 」
 ┴
@@ -39,7 +39,7 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ├── _Example: reply Gambar dan caption ${prefix}biru_
 ┠≽ *${prefix}glass*
 ├── _Example: reply Gambar dan caption ${prefix}glass_
-├───────────────────
+├──────────────────
 ┠≽ *${prefix}listephoto*
 ├── _Example: untuk menampilkan list ephoto_
 ┠≽ *${prefix}ephoto 1 - 216*
@@ -70,20 +70,20 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ├── _Example: ${prefix}tts id Farhan_
 ┠≽ *${prefix}ttp TEXT*
 ├── _Example: ${prefix}ttp Farhan_
-├───────────────────
-┠≽ *${prefix}stiker*
-├── _Example: reply gambar dan caption ${prefix}stiker_
-┠≽ *${prefix}toimg*
-├── _Example: reply stiker dan caption ${prefix}toimg_
-┠≽ *${prefix}tovideo*
-├── _Example: reply video dan caption ${prefix}tovideo_
-┠≽ *${prefix}img2url*
-├── _Example: reply gambar dan caption ${prefix}img2url_
-┠≽ *${prefix}tomp3*
-├── _Example: reply video dan caption ${prefix}tomp3_
-┠≽ *${prefix}ocr*
-├── _Example: reply gambar dan caption ${prefix}ocr_
-├───────────────────
+├──────────────────
+≽ ${prefix}stiker
+para descrição e imagens que ja foi enviada
+≽ ${prefix}toimg*
+para transformar sticker em img
+≽ ${prefix}tovideo*
+para transformar sticker em video
+≽ ${prefix}img2url*
+para descrição e imagens que ja foi enviada
+≽ ${prefix}tomp3*
+para transformar em mp3
+≽ ${prefix}ocr
+para reconhecer caracteres a partir de uma imagem e transcrever um texto
+├──────────────────
 ≽ ${prefix}slow
 para audio/video digite ${prefix}slow
 ≽ ${prefix}grave
@@ -95,7 +95,7 @@ para audio/video digite ${prefix}bass
 ≽ ${prefix}toptt
 para audio/video digite ${prefix}toptt
 ┬
-╰──────────────────────────
+╰──────────────────
 `
 }
 exports.creator = creator
