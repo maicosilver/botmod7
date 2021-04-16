@@ -15,30 +15,25 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 
 ╭─────≽「 *CREATOR MENU* 」
 ┴
-┠≽ *${prefix}quotemaker tx/wtrmk/tema*
-├── _Example: ${prefix}quotemaker Farhan/Farhan/random_
-┠≽ *${prefix}nulis text*
-├── _Example: ${prefix}nulis Farhan Gans_
-┠≽ *${prefix}croman TEXT dan Friend*
-├── _Example: ${prefix}croman Farhan & Friend_
-┠≽ *${prefix}slide TEXT*
-├── _Example: ${prefix}slide Farhan & Friend_
-┠≽ *${prefix}trigger*
-├── _Example: reply Gambar dan caption ${prefix}trigger_
-┠≽ *${prefix}wasted*
-├── _Example: reply Gambar dan caption ${prefix}wasted_
-┠≽ *${prefix}pelangi*
-├── _Example: reply Gambar dan caption ${prefix}pelangi_
-┠≽ *${prefix}sepia*
-├── _Example: reply Gambar dan caption ${prefix}sepia_
-┠≽ *${prefix}merah*
-├── _Example: reply Gambar dan caption ${prefix}merah_
-┠≽ *${prefix}hijau*
-├── _Example: reply Gambar dan caption ${prefix}hijau_
-┠≽ *${prefix}biru*
-├── _Example: reply Gambar dan caption ${prefix}biru_
-┠≽ *${prefix}glass*
-├── _Example: reply Gambar dan caption ${prefix}glass_
+≽ ${prefix}quotemaker tx/wtrmk/tema
+Example: ${prefix}quotemaker Farhan/Farhan/random
+≽ ${prefix}nulis text
+Example: ${prefix}nulis Farhan Gans
+≽ ${prefix}croman TEXT dan Friend
+Example: ${prefix}croman Farhan & Friend
+≽ ${prefix}slide TEXT
+Example: ${prefix}slide Farhan & Friend
+├── 
+filtro de imagem
+≽ ${prefix}trigger
+≽ ${prefix}wasted
+≽ ${prefix}arcoiris
+≽ ${prefix}sepia
+≽ ${prefix}merah
+≽ ${prefix}verde
+≽ ${prefix}azul
+≽ ${prefix}vermelho
+≽ ${prefix}vidro
 ├──────────────────
 ┠≽ *${prefix}listephoto*
 ├── _Example: untuk menampilkan list ephoto_
@@ -73,13 +68,13 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ├──────────────────
 ≽ ${prefix}stiker
 para descrição e imagens que ja foi enviada
-≽ ${prefix}toimg*
+≽ ${prefix}toimg
 para transformar sticker em img
-≽ ${prefix}tovideo*
+≽ ${prefix}tovideo
 para transformar sticker em video
-≽ ${prefix}img2url*
+≽ ${prefix}img2url
 para descrição e imagens que ja foi enviada
-≽ ${prefix}tomp3*
+≽ ${prefix}tomp3
 para transformar em mp3
 ≽ ${prefix}ocr
 para reconhecer caracteres a partir de uma imagem e transcrever um texto
