@@ -1025,7 +1025,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 				break 
-				case 'pelangi':
+				case 'arcoiris ':
 				case 'rainbow':
 					if (!isUser) return reply(mess.only.userB)
 					
@@ -1113,7 +1113,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 				break 
-				case 'hijau':
+				case 'verde':
 					if (!isUser) return reply(mess.only.userB)
 					
 					if (isBanned) return reply (mess.only.benned)
@@ -1142,7 +1142,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 				break 
-				case 'biru':
+				case 'azul':
 					if (!isUser) return reply(mess.only.userB)
 					
 					if (isBanned) return reply (mess.only.benned)
@@ -1171,7 +1171,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 				break 
-				case 'glass':
+				case 'vidro':
 					if (!isUser) return reply(mess.only.userB)
 					
 					if (isBanned) return reply (mess.only.benned)
