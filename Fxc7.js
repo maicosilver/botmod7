@@ -880,7 +880,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 								fs.unlinkSync(media)
 							})
 					} else {
-						reply('Foto aja gan Jangan Video')
+						reply('Comando so para fotos')
 					}
 					await limitAdd(sender) 
 					break 
