@@ -1025,7 +1025,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 				break 
-				case 'arcoiris ':
+				case 'arcoiris':
 				case 'rainbow':
 					if (!isUser) return reply(mess.only.userB)
 					
