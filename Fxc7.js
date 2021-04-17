@@ -932,7 +932,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 								console.log('Finish')
 								exec(`webpmux -set exif ${addMetadata('nokia', '9672-4995')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Nih Dah Jadi Gif Stikernya`)
+									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Aqui está a figurinha animada`)
 									fs.unlinkSync(media)
 									fs.unlinkSync(ran)
 								})
