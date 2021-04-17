@@ -341,7 +341,7 @@ async function starts() {
 				ownerB: 'Desculpe, este comando só pode ser usado pelo proprietário do bot! ',
 				premium: 'Desculpe, este recurso é especificamente para usuários premium!',
 				userB: `Oi ${pushname2} você não está registrado no banco de dados, digite \n${prefix}registrar`,
-				admin: 'Desculpe, este comando só pode ser usado pelos adm do grupo!',
+				admin: 'Desculpe, este comando só pode ser usado por um adm do grupo!',
 				Badmin: 'Desculpe, este comando só pode ser usado quando o bot é adm!',
 				}
 			}
