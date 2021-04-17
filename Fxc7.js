@@ -1021,7 +1021,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1051,7 +1051,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1080,7 +1080,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1109,7 +1109,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1138,7 +1138,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1167,7 +1167,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1196,7 +1196,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 				break 
