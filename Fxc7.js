@@ -2536,7 +2536,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (vuss !== undefined) {
 					costum(await getBuffer(anu), image, FarhanGans, FarhanGans2)
 					} else {
-						reply('Terjadi kesalahan, silahkan pilih theme lain')
+						reply('Ocorreu um erro, escolha outro tema')
 					}
 					break
 				case 'ephoto':
