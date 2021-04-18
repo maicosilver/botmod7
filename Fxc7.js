@@ -886,6 +886,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					break 
 				case 'stiker':
 				case 'sticker':
+                                                if (!isGroup) return reply(mess.only.group)
 						if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await frhan.downloadAndSaveMediaMessage(encmedia)
