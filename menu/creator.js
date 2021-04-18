@@ -81,9 +81,9 @@ para reconhecer caracteres a partir de uma imagem e transcrever um texto
 ├──────────────────
 ≽ ${prefix}slow
 para audio/video digite ${prefix}slow
-≽ ${prefix}grave
+≽ ${prefix}diabolico
 para audio/video digite ${prefix}grave
-≽ ${prefix}agudo
+≽ ${prefix}esquilo
 para audio/video digite ${prefix}agudo
 ≽ ${prefix}bass
 para audio/video digite ${prefix}bass
