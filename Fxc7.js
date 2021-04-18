@@ -702,6 +702,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					break
 			case 'menu':
 			case 'help':
+                        if (!isGroup) return reply(mess.only.group)
 			if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB)
 				uptime = process.uptime()
