@@ -888,6 +888,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				case 'stiker':
 				case 'sticker':
                                                 if (!isGroup) return reply(mess.only.group)
+                                                if (isBanned) return reply(mess.only.benned)
 						if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await frhan.downloadAndSaveMediaMessage(encmedia)
