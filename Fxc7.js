@@ -828,7 +828,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (!isOwner)return reply(mess.only.ownerB)
 					bnnd = body.slice(8)
 					ban.splice(`${bnnd}@s.whatsapp.net`, 1)
-					reply(`O número wa.me/${bnnd} foi desbanido do acesso ao bot!`)
+					reply(`O número wa.me/${sender.split('@')[0]} foi desbanido do acesso ao bot!`)
 					break
 				case 'block':
 				 frhan.updatePresence(from, Presence.composing) 
