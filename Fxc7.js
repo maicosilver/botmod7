@@ -3424,17 +3424,17 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if ((args[0]) === 'on') {
-						if (isSimi) return reply('Mode simi sudah aktif')
+						if (isSimi) return reply('O modo Simi está ativo!')
 						_samih.push(from)
 						fs.writeFileSync('./database/json/simi.json', JSON.stringify(_samih))
-						reply(`\`\`\`✓Sukses mengaktifkan mode simi di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Ativado com sucesso o modo simi no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
-						if (!isSimi) return reply('Mode simi Sudah Off sebelumnya')
+						if (!isSimi) return reply('O modo Simi já foi desativado')
 						_samih.splice(from, 1)
 						fs.writeFileSync('./database/json/simi.json', JSON.stringify(_samih))
-						reply(`\`\`\`✓Sukes menonaktifkan mode simi di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Desativado o modo simi com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
-						reply('On untuk mengaktifkan, Off untuk menonaktifkan')
+						reply('On para ativar, Off para desativar')
 					}
 					break
 			    case 'nsfw':
