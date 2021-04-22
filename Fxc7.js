@@ -3381,7 +3381,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					break
 				case 'toimg':
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (!isQuotedSticker) return reply(' reply stickernya gan')
+					if (!isQuotedSticker) return reply(' marque um sticker!')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await frhan.downloadAndSaveMediaMessage(encmedia)
 					ran= getRandom('.png')
