@@ -3640,7 +3640,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isOwner) return reply(mess.only.ownerB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Tag target yang ingin di clone')
+					if (args.length < 1) return reply('Marque o membro que você deseja clonar')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag gan')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -3648,9 +3648,9 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						pp = await frhan.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						frhan.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
+						mentions(`Foto do perfil atualizada com sucesso usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('Gagal om')
+						reply('Ocorreu um erro...')
 					}
 					break
 //setting bot
