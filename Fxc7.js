@@ -885,6 +885,15 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 					break 
+                                case 'renomear':
+			if (quotedMsg && quotedMsg.type == 'sticker' && arks.includes('|')) {
+				await kill.reply(from, mess.wait(), id)
+				const stickerMeta = await decryptMedia(quotedMsg)
+				const packName = arg.split('|')[0]
+				const authorName = arg.split('|')[1]
+				await kill.sendImageAsSticker(from, `data:${quotedMsg.mimetype};base64,${stickerMeta.toString('base64')}`, { author: authorName, pack: packName })
+			} else return kill.reply(from, mess.onlyst() + '\n\n' + mess.argsbar() + 'use 1 "|".', id)
+                                break
 				case 'stiker':
 				case 'sticker':
                                                 if (!isGroup) return reply(mess.only.group)
