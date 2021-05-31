@@ -1,1114 +1,144 @@
-.class public LX/2m9;
-.super LX/0Qi;
-.source ""
-
-
-# instance fields
-.field public A00:LX/0Ft;
-
-.field public A01:Z
-
-.field public final A02:Landroid/view/View;
-
-.field public final A03:Landroid/widget/ImageView;
-
-.field public final A04:Landroid/widget/TextView;
-
-.field public final A05:Lcom/dmwhatsapp/CircularProgressBar;
-
-.field public final A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-.field public final A07:Lcom/dmwhatsapp/TextEmojiLabel;
-
-.field public final A08:LX/1SE;
-
-.field public final A09:Lcom/dmwhatsapp/components/TextAndDateLayout;
-
-.field public final A0A:Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;
-
-.field public final A0B:LX/09Q;
-
-
-# direct methods
-.method public constructor <init>(Landroid/content/Context;LX/0IX;)V
-    .registers 7
-
-    invoke-direct {p0, p1, p2}, LX/0Qi;-><init>(Landroid/content/Context;LX/089;)V
-
-    invoke-static {}, LX/1SE;->A00()LX/1SE;
-
-    move-result-object v0
-
-    iput-object v0, p0, LX/2m9;->A08:LX/1SE;
-
-    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_c7
-
-    const/4 v0, 0x0
-
-    :goto_10
-    iput-object v0, p0, LX/2m9;->A0B:LX/09Q;
-
-    new-instance v0, LX/2Uq;
-
-    invoke-direct {v0, p0}, LX/2Uq;-><init>(LX/2m9;)V
-
-    iput-object v0, p0, LX/2m9;->A00:LX/0Ft;
-
-    const v0, 0x7f0a02bb
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    iput-object v0, p0, LX/2m9;->A04:Landroid/widget/TextView;
-
-    const v0, 0x7f0a056c
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;
-
-    iput-object v0, p0, LX/2m9;->A0A:Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;
-
-    const v0, 0x7f0a089b
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/dmwhatsapp/CircularProgressBar;
-
-    iput-object v0, p0, LX/2m9;->A05:Lcom/dmwhatsapp/CircularProgressBar;
-
-    const/4 v2, 0x0
-
-    iput v2, v0, Lcom/dmwhatsapp/CircularProgressBar;->A0B:I
-
-    const v0, 0x7f0a01d8
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
-    iput-object v0, p0, LX/2m9;->A03:Landroid/widget/ImageView;
-
-    const v0, 0x7f0a02be
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iput-object v0, p0, LX/2m9;->A02:Landroid/view/View;
-
-    const v0, 0x7f0a01db
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/dmwhatsapp/TextEmojiLabel;
-
-    iput-object v0, p0, LX/2m9;->A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    const v0, 0x7f0a0b61
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/dmwhatsapp/components/TextAndDateLayout;
-
-    iput-object v0, p0, LX/2m9;->A09:Lcom/dmwhatsapp/components/TextAndDateLayout;
-
-    const v0, 0x7f0a0c4a
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/dmwhatsapp/TextEmojiLabel;
-
-    const v0, 0x7f0a0882
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/dmwhatsapp/TextEmojiLabel;
-
-    iput-object v0, p0, LX/2m9;->A07:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    iget-object v0, p0, LX/2m9;->A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-static {v0}, LX/00E;->A0a(Lcom/dmwhatsapp/TextEmojiLabel;)V
-
-    iget-object v0, p0, LX/2m9;->A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setAutoLinkMask(I)V
-
-    iget-object v0, p0, LX/2m9;->A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setLinksClickable(Z)V
-
-    iget-object v0, p0, LX/2m9;->A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
-
-    iget-object v0, p0, LX/2m9;->A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setLongClickable(Z)V
-
-    iget-object v1, p0, LX/0Pu;->A0m:LX/01d;
-
-    const v0, 0x7f12105b
-
-    invoke-virtual {v1, v0}, LX/01d;->A06(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v0, p0, LX/2m9;->A07:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setAutoLinkMask(I)V
-
-    iget-object v0, p0, LX/2m9;->A07:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setLinksClickable(Z)V
-
-    iget-object v0, p0, LX/2m9;->A07:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
-
-    iget-object v0, p0, LX/2m9;->A07:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setLongClickable(Z)V
-
-    const v0, 0x7f0a0881
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    const/16 v1, 0x2f
-
-    new-instance v0, Lcom/facebook/redex/ViewOnClickEBaseShape4S0100000_I1_1;
-
-    invoke-direct {v0, p0, v1}, Lcom/facebook/redex/ViewOnClickEBaseShape4S0100000_I1_1;-><init>(Ljava/lang/Object;I)V
-
-    invoke-virtual {v2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, LX/2m9;->A04(Z)V
-
-    return-void
-
-    :cond_c7
-    invoke-static {}, LX/09Q;->A01()LX/09Q;
-
-    move-result-object v0
-
-    goto/16 :goto_10
-.end method
-
-.method private A04(Z)V
-    .registers 25
-
-    move-object/from16 v9, p0
-
-    invoke-super {v9}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v8
-
-    check-cast v8, LX/0IX;
-
-    iget-object v7, v8, LX/089;->A02:LX/08A;
-
-    if-eqz v7, :cond_1d3
-
-    if-eqz p1, :cond_17
-
-    iget-object v1, v9, LX/2m9;->A04:Landroid/widget/TextView;
-
-    invoke-static {v8}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
-
-    :cond_17
-    iget-object v6, v9, LX/2m9;->A0A:Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;
-
-    const/4 v5, 0x0
-
-    invoke-virtual {v6, v5}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
-
-    iput-object v7, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A04:LX/08A;
-
-    const/4 v4, 0x0
-
-    iput-boolean v4, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A06:Z
-
-    const/4 v15, 0x1
-
-    invoke-virtual {v6, v15}, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->setPaddingOnTopOnly(Z)V
-
-    invoke-virtual {v9}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    invoke-static {v0}, LX/09Z;->A0n(LX/089;)Z
-
-    move-result v0
-
-    const/16 v3, 0x8
-
-    if-eqz v0, :cond_139
-
-    iget-object v10, v9, LX/2m9;->A02:Landroid/view/View;
-
-    invoke-virtual {v10, v4}, Landroid/view/View;->setVisibility(I)V
-
-    xor-int/lit8 v16, p1, 0x1
-
-    iget-object v2, v9, LX/2m9;->A05:Lcom/dmwhatsapp/CircularProgressBar;
-
-    iget-object v0, v9, LX/2m9;->A03:Landroid/widget/ImageView;
-
-    iget-object v1, v9, LX/2m9;->A04:Landroid/widget/TextView;
-
-    move-object/from16 v18, v10
-
-    move-object/from16 v19, v2
-
-    move-object/from16 v20, v0
-
-    move-object/from16 v21, v1
-
-    move/from16 v17, v4
-
-    invoke-static/range {v15 .. v21}, LX/0Qi;->A09(ZZZLandroid/view/View;Landroid/view/View;Landroid/widget/ImageView;Landroid/view/View;)V
-
-    iget-object v10, v9, LX/0Pu;->A0m:LX/01d;
-
-    const v0, 0x7f1206b6
-
-    invoke-virtual {v10, v0}, LX/01d;->A06(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    iget-object v0, v8, LX/040;->A0n:LX/03x;
-
-    iget-boolean v0, v0, LX/03x;->A02:Z
-
-    if-eqz v0, :cond_134
-
-    iget-object v0, v9, LX/0Qi;->A09:LX/0QB;
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    :goto_63
-    iget-object v0, v9, LX/0Qi;->A06:LX/0QB;
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    invoke-virtual {v2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    :goto_6b
-    invoke-virtual {v9}, LX/0Pu;->A0K()V
-
-    iget-object v0, v9, LX/0Pu;->A0M:Landroid/view/View$OnLongClickListener;
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
-
-    iget-object v0, v9, LX/2m9;->A08:LX/1SE;
-
-    invoke-virtual {v0, v8}, LX/1SE;->A03(LX/0IX;)Ljava/lang/String;
-
-    move-result-object v14
-
-    iget-object v13, v8, LX/0IX;->A07:Ljava/lang/String;
-
-    invoke-virtual {v9}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v12
-
-    iget-object v11, v9, LX/2m9;->A07:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    invoke-virtual {v9}, LX/0Pu;->getTextFontSize()F
-
-    move-result v0
-
-    invoke-virtual {v11, v0}, Landroid/widget/TextView;->setTextSize(F)V
-
-    iget-object v10, v9, LX/2m9;->A06:Lcom/dmwhatsapp/TextEmojiLabel;
-
-    const/4 v2, -0x1
-
-    invoke-virtual {v9}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    iget-object v0, v9, LX/0Pu;->A0m:LX/01d;
-
-    invoke-static {v1, v0, v2}, LX/0Pu;->A02(Landroid/content/res/Resources;LX/01d;I)F
-
-    move-result v0
-
-    invoke-virtual {v10, v0}, Landroid/widget/TextView;->setTextSize(F)V
-
-    const v0, 0x7f060119
-
-    invoke-virtual {v12, v0}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v0
-
-    invoke-virtual {v10, v3}, Landroid/view/View;->setVisibility(I)V
-
-    iget-object v1, v9, LX/2m9;->A09:Lcom/dmwhatsapp/components/TextAndDateLayout;
-
-    const/4 v0, 0x2
-
-    invoke-virtual {v1, v0}, Lcom/dmwhatsapp/components/TextAndDateLayout;->setMaxTextLineCount(I)V
-
-    invoke-virtual {v1}, Landroid/view/View;->invalidate()V
-
-    invoke-static {v13}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_12f
-
-    invoke-virtual {v11, v4}, Landroid/view/View;->setVisibility(I)V
-
-    :goto_b8
-    invoke-static {v14}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_111
-
-    invoke-virtual {v10, v4}, Landroid/view/View;->setVisibility(I)V
-
-    :cond_c1
-    :goto_c1
-    iput-boolean v4, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A05:Z
-
-    iget-object v0, v8, LX/040;->A0n:LX/03x;
-
-    iget-boolean v0, v0, LX/03x;->A02:Z
-
-    invoke-virtual {v6, v0}, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->setOutgoing(Z)V
-
-    iput-boolean v4, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A07:Z
-
-    iget v1, v7, LX/08A;->A08:I
-
-    if-eqz v1, :cond_f2
-
-    iget v0, v7, LX/08A;->A06:I
-
-    if-eqz v0, :cond_f2
-
-    iput v1, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A01:I
-
-    iput v0, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A00:I
-
-    sget-object v0, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
-
-    invoke-virtual {v6, v0}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
-
-    :goto_dd
-    if-nez p1, :cond_e8
-
-    iget-boolean v0, v9, LX/2m9;->A01:Z
-
-    if-eqz v0, :cond_e8
-
-    iget-object v0, v9, LX/2m9;->A0B:LX/09Q;
-
-    invoke-virtual {v0, v8}, LX/09Q;->A08(LX/040;)V
-
-    :cond_e8
-    iput-boolean v4, v9, LX/2m9;->A01:Z
-
-    iget-object v1, v9, LX/2m9;->A0B:LX/09Q;
-
-    iget-object v0, v9, LX/2m9;->A00:LX/0Ft;
-
-    invoke-virtual {v1, v8, v6, v0, v4}, LX/09Q;->A0C(LX/040;Landroid/view/View;LX/0Ft;Z)V
-
-    return-void
-
-    :cond_f2
-    const/16 v1, 0x64
-
-    invoke-static {v8, v1}, LX/09Q;->A00(LX/089;I)I
-
-    move-result v0
-
-    if-lez v0, :cond_104
-
-    iput v1, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A01:I
-
-    iput v0, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A00:I
-
-    :goto_fe
-    sget-object v0, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
-
-    invoke-virtual {v6, v0}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
-
-    goto :goto_dd
-
-    :cond_104
-    sget-object v0, LX/01m;->A0K:LX/01m;
-
-    iget v1, v0, LX/01m;->A09:I
-
-    mul-int/lit8 v0, v1, 0x9
-
-    shr-int/lit8 v0, v0, 0x4
-
-    iput v1, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A01:I
-
-    iput v0, v6, Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;->A00:I
-
-    goto :goto_fe
-
-    :cond_111
-    invoke-static {v13}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_c1
-
-    invoke-virtual {v11, v3}, Landroid/view/View;->setVisibility(I)V
-
-    invoke-virtual {v1, v15}, Lcom/dmwhatsapp/components/TextAndDateLayout;->setMaxTextLineCount(I)V
-
-    invoke-virtual {v10, v4}, Landroid/view/View;->setVisibility(I)V
-
-    invoke-virtual {v9}, LX/0Pu;->getTextFontSize()F
-
-    move-result v0
-
-    invoke-virtual {v10, v0}, Landroid/widget/TextView;->setTextSize(F)V
-
-    const v0, 0x7f0600d2
-
-    invoke-virtual {v12, v0}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v0
-
-    goto :goto_c1
-
-    :cond_12f
-    invoke-virtual {v11, v3}, Landroid/view/View;->setVisibility(I)V
-
-    goto/16 :goto_b8
-
-    :cond_134
-    invoke-virtual {v6, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    goto/16 :goto_63
-
-    :cond_139
-    invoke-virtual {v9}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    invoke-static {v0}, LX/09Z;->A0o(LX/089;)Z
-
-    move-result v0
-
-    iget-object v11, v9, LX/2m9;->A02:Landroid/view/View;
-
-    if-eqz v0, :cond_175
-
-    invoke-virtual {v11, v3}, Landroid/view/View;->setVisibility(I)V
-
-    iget-object v1, v9, LX/2m9;->A05:Lcom/dmwhatsapp/CircularProgressBar;
-
-    iget-object v0, v9, LX/2m9;->A03:Landroid/widget/ImageView;
-
-    iget-object v2, v9, LX/2m9;->A04:Landroid/widget/TextView;
-
-    move/from16 v17, v4
-
-    move/from16 v18, v4
-
-    move-object/from16 v19, v11
-
-    move-object/from16 v20, v1
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v22, v2
-
-    move/from16 v16, v4
-
-    invoke-static/range {v16 .. v22}, LX/0Qi;->A09(ZZZLandroid/view/View;Landroid/view/View;Landroid/widget/ImageView;Landroid/view/View;)V
-
-    iget-object v1, v9, LX/0Pu;->A0m:LX/01d;
-
-    const v0, 0x7f12105b
-
-    invoke-virtual {v1, v0}, LX/01d;->A06(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    iget-object v0, v9, LX/0Qi;->A09:LX/0QB;
-
-    invoke-virtual {v2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    goto/16 :goto_6b
-
-    :cond_175
-    invoke-virtual {v11, v4}, Landroid/view/View;->setVisibility(I)V
-
-    xor-int/lit8 v17, p1, 0x1
-
-    iget-object v1, v9, LX/2m9;->A05:Lcom/dmwhatsapp/CircularProgressBar;
-
-    iget-object v0, v9, LX/2m9;->A03:Landroid/widget/ImageView;
-
-    iget-object v10, v9, LX/2m9;->A04:Landroid/widget/TextView;
-
-    move/from16 v18, v4
-
-    move-object/from16 v19, v11
-
-    move-object/from16 v20, v1
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v22, v10
-
-    move/from16 v16, v4
-
-    invoke-static/range {v16 .. v22}, LX/0Qi;->A09(ZZZLandroid/view/View;Landroid/view/View;Landroid/widget/ImageView;Landroid/view/View;)V
-
-    invoke-virtual {v6, v5}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    invoke-virtual {v9}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    invoke-static {v0}, LX/09Z;->A0m(LX/089;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1ba
-
-    iget-object v1, v9, LX/0Pu;->A0m:LX/01d;
-
-    const v0, 0x7f120c41
-
-    invoke-virtual {v1, v0}, LX/01d;->A06(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v10, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    const v0, 0x7f08010f
-
-    invoke-virtual {v10, v0, v4, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
-
-    iget-object v0, v9, LX/0Qi;->A08:LX/0QB;
-
-    invoke-virtual {v10, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    iget-object v0, v9, LX/0Qi;->A09:LX/0QB;
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    goto/16 :goto_6b
-
-    :cond_1ba
-    invoke-static {v8}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v2
-
-    iget-wide v0, v8, LX/089;->A01:J
-
-    invoke-virtual {v9, v10, v2, v0, v1}, LX/0Pu;->A0T(Landroid/widget/TextView;Ljava/util/List;J)V
-
-    const v0, 0x7f0800ea
-
-    invoke-virtual {v10, v0, v4, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
-
-    iget-object v0, v9, LX/0Qi;->A07:LX/0QB;
-
-    invoke-virtual {v10, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    invoke-virtual {v6, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    goto/16 :goto_6b
-
-    :cond_1d3
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-
-# virtual methods
-.method public A09()Z
-    .registers 2
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    invoke-static {v0}, LX/09Z;->A0g(LX/040;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public A0G()V
-    .registers 2
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, LX/0Pu;->A0b(Z)V
-
-    invoke-direct {p0, v0}, LX/2m9;->A04(Z)V
-
-    return-void
-.end method
-
-.method public A0H()V
-    .registers 6
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v4
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, LX/2m9;->A01:Z
-
-    iget-object v3, p0, LX/2m9;->A0B:LX/09Q;
-
-    invoke-virtual {v3, v4}, LX/09Q;->A08(LX/040;)V
-
-    iget-object v2, p0, LX/2m9;->A0A:Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;
-
-    iget-object v1, p0, LX/2m9;->A00:LX/0Ft;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {v3, v4, v2, v1, v0}, LX/09Q;->A0C(LX/040;Landroid/view/View;LX/0Ft;Z)V
-
-    return-void
-.end method
-
-.method public A0K()V
-    .registers 4
-
-    iget-object v2, p0, LX/2m9;->A05:Lcom/dmwhatsapp/CircularProgressBar;
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v2, v0}, LX/0Qi;->A0g(Landroid/widget/ProgressBar;LX/089;)I
-
-    move-result v0
-
-    if-nez v0, :cond_1a
-
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const v0, 0x7f060239
-
-    invoke-static {v1, v0}, LX/02c;->A00(Landroid/content/Context;I)I
-
-    move-result v0
-
-    :goto_17
-    iput v0, v2, Lcom/dmwhatsapp/CircularProgressBar;->A0C:I
-
-    return-void
-
-    :cond_1a
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const v0, 0x7f060238
-
-    invoke-static {v1, v0}, LX/02c;->A00(Landroid/content/Context;I)I
-
-    move-result v0
-
-    goto :goto_17
-.end method
-
-.method public A0L()V
-    .registers 8
-
-    iget-object v1, p0, LX/0Qi;->A02:LX/03d;
-
-    if-eqz v1, :cond_f
-
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0, v1}, Lcom/dmwhatsapp/RequestPermissionActivity;->A0J(Landroid/content/Context;LX/03d;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_f
-
-    return-void
-
-    :cond_f
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v3
-
-    check-cast v3, LX/0IX;
-
-    iget-object v5, v3, LX/089;->A02:LX/08A;
-
-    if-eqz v5, :cond_b8
-
-    iget-object v0, v3, LX/040;->A0n:LX/03x;
-
-    iget-boolean v1, v0, LX/03x;->A02:Z
-
-    if-nez v1, :cond_24
-
-    iget-boolean v0, v5, LX/08A;->A0P:Z
-
-    if-nez v0, :cond_24
-
-    return-void
-
-    :cond_24
-    iget-object v0, v5, LX/08A;->A0F:Ljava/io/File;
-
-    const/4 v2, 0x0
-
-    if-eqz v0, :cond_30
-
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v0
-
-    const/4 v6, 0x1
-
-    if-nez v0, :cond_31
-
-    :cond_30
-    const/4 v6, 0x0
-
-    :cond_31
-    const-string/jumbo v0, "viewmessage/ from_me:"
-
-    invoke-static {v0}, LX/00E;->A0P(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v0, " type:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-byte v0, v3, LX/040;->A0m:B
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v0, " name:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v0, v3, LX/089;->A08:Ljava/lang/String;
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, " url:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v0, v3, LX/089;->A09:Ljava/lang/String;
-
-    invoke-static {v0}, LX/07n;->A1H(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, " file:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v0, v5, LX/08A;->A0F:Ljava/io/File;
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v0, " progress:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v0, v5, LX/08A;->A0C:J
-
-    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v0, " transferred:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v0, v5, LX/08A;->A0P:Z
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v0, " transferring:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v0, v5, LX/08A;->A0a:Z
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v0, " fileSize:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v0, v5, LX/08A;->A0A:J
-
-    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v0, " media_size:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v0, v3, LX/089;->A01:J
-
-    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v0, " timestamp:"
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v0, v3, LX/040;->A0E:J
-
-    invoke-static {v4, v0, v1}, LX/00E;->A1C(Ljava/lang/StringBuilder;J)V
-
-    if-nez v6, :cond_b2
-
-    invoke-virtual {p0}, LX/0Qi;->A0j()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_b2
-
-    const-string/jumbo v0, "viewmessage/ no file to download from receiver side"
-
-    invoke-static {v0}, Lcom/whatsapp/util/Log;->w(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_b2
-    iget-object v0, p0, LX/2m9;->A0A:Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;
-
-    invoke-virtual {p0, v3, v0, v2}, LX/0Pu;->A0W(LX/0IX;Landroid/view/View;Z)V
-
-    return-void
-
-    :cond_b8
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public A0V(LX/040;Z)V
-    .registers 5
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v1
-
-    const/4 v0, 0x0
-
-    if-eq p1, v1, :cond_8
-
-    const/4 v0, 0x1
-
-    :cond_8
-    invoke-super {p0, p1, p2}, LX/0Pu;->A0V(LX/040;Z)V
-
-    if-nez p2, :cond_f
-
-    if-eqz v0, :cond_12
-
-    :cond_f
-    invoke-direct {p0, v0}, LX/2m9;->A04(Z)V
-
-    :cond_12
-    return-void
-.end method
-
-.method public synthetic A0k()V
-    .registers 4
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v2
-
-    check-cast v2, LX/0IX;
-
-    iget-object v1, p0, LX/2m9;->A0A:Lcom/dmwhatsapp/conversation/conversationrow/ConversationRowImage$RowImageView;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v2, v1, v0}, LX/0Pu;->A0W(LX/0IX;Landroid/view/View;Z)V
-
-    return-void
-.end method
-
-.method public getBroadcastDrawableId()I
-    .registers 3
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    iget-object v0, v0, LX/089;->A04:Ljava/lang/String;
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    const v0, 0x7f0800de
-
-    if-eqz v1, :cond_12
-
-    const v0, 0x7f0800df
-
-    :cond_12
-    return v0
-.end method
-
-.method public getCenteredLayoutId()I
-    .registers 2
-
-    const v0, 0x7f0d00fb
-
-    return v0
-.end method
-
-.method public bridge synthetic getFMessage()LX/040;
-    .registers 2
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public bridge synthetic getFMessage()LX/089;
-    .registers 2
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public getFMessage()LX/0IX;
-    .registers 2
-
-    invoke-super {p0}, LX/0Qi;->getFMessage()LX/089;
-
-    move-result-object v0
-
-    check-cast v0, LX/0IX;
-
-    return-object v0
-.end method
-
-.method public getIncomingLayoutId()I
-    .registers 2
-
-    const v0, 0x7f0d00fb
-
-    return v0
-.end method
-
-.method public getMainChildMaxWidth()I
-    .registers 5
-
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, LX/0Qi;->A05(Landroid/content/Context;)I
-
-    move-result v3
-
-    iget-boolean v2, p0, LX/0Pv;->A0K:Z
-
-    const/16 v1, 0x64
-
-    const/16 v0, 0x48
-
-    if-eqz v2, :cond_12
-
-    const/16 v0, 0x64
-
-    :cond_12
-    mul-int/2addr v3, v0
-
-    div-int/2addr v3, v1
-
-    return v3
-.end method
-
-.method public getOutgoingLayoutId()I
-    .registers 2
-
-    const v0, 0x7f0d00fc
-
-    return v0
-.end method
-
-.method public setFMessage(LX/040;)V
-    .registers 3
-
-    instance-of v0, p1, LX/0IX;
-
-    invoke-static {v0}, LX/00K;->A07(Z)V
-
-    invoke-super {p0, p1}, LX/0Qi;->setFMessage(LX/040;)V
-
-    return-void
-.end method
+<?xml version="1.0" encoding="utf-8"?>
+<!--Open VIP can improve the speed of decompilation, resource code translate to name automatically and activate the smart editing and automatic completion function-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="1"
+        android:id="@7F0A02BE"
+        android:layout_width="@7F070125"
+        android:layout_height="-2"
+        android:layout_marginRight="@7F07012E">
+        <include layout="@7F0D00F8" />
+        <include layout="@7F0D0101" />
+        <include layout="@7F0D0123" />
+        <com.whatsapp.WaFrameLayout
+            android:layout_width="-1"
+            android:layout_height="-2"
+            android:layout_margin="5dp"
+            android:foreground="@7F0800C7"
+            app:waflForegroundTint="@7F0600A3">
+            <LinearLayout
+                android:orientation="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+                <view
+                    class="com.whatsapp.conversation.conversationrow.ConversationRowDocument$DocumentPreviewView"
+                    android:id="@7F0A086F"
+                    android:layout_width="-1"
+                    android:layout_height="@7F070124"
+                    android:scaleType="6" />
+                <View
+                    android:id="@7F0A0873"
+                    android:background="@7F06011F"
+                    android:layout_width="-1"
+                    android:layout_height="0.3dp" />
+                <LinearLayout
+                    android:gravity="0x00000010"
+                    android:orientation="0"
+                    android:id="@7F0A037C"
+                    android:background="@7F060396"
+                    android:paddingLeft="@7F070129"
+                    android:paddingRight="@7F070129"
+                    android:layout_width="-1"
+                    android:layout_height="-2">
+                    <com.whatsapp.WaImageView
+                        android:id="@7F0A056B"
+                        android:paddingTop="@7F070129"
+                        android:paddingBottom="@7F070129"
+                        android:layout_width="-2"
+                        android:layout_height="-2"
+                        android:scaleType="3" />
+                    <com.whatsapp.TextEmojiLabel
+                        android:textSize="15sp"
+                        android:textColor="?01010036"
+                        android:ellipsize="3"
+                        android:gravity="0x00000010"
+                        android:id="@7F0A0B98"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="-2"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:layout_weight="1.0" />
+                    <FrameLayout
+                        android:gravity="0x00000011"
+                        android:layout_gravity="0x00000010"
+                        android:id="@7F0A02C4"
+                        android:layout_width="-2"
+                        android:layout_height="-2">
+                        <com.whatsapp.WaImageView
+                            android:layout_gravity="0x00000011"
+                            android:id="@7F0A02C3"
+                            android:background="@null"
+                            android:padding="8dp"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:scaleType="3"
+                            android:alpha="0.7"
+                            app:tint="@7F060152" />
+                        <com.whatsapp.CircularProgressBar
+                            android:layout_gravity="0x00000011"
+                            android:id="@7F0A08B8"
+                            android:visibility="2"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:indeterminateOnly="false" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.whatsapp.WaFrameLayout>
+        <LinearLayout
+            android:orientation="0"
+            android:paddingLeft="8dp"
+            android:paddingBottom="3dp"
+            android:layout_width="-1"
+            android:layout_height="-2">
+            <com.whatsapp.WaTextView
+                android:id="@7F0A0583"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FA" />
+            <com.whatsapp.WaTextView
+                android:id="@7F0A014E"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FB" />
+            <com.whatsapp.WaTextView
+                android:id="@7F0A0456"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FA" />
+            <com.whatsapp.WaTextView
+                android:id="@7F0A014D"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FB" />
+            <com.whatsapp.WaTextView
+                android:id="@7F0A0457"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                android:maxLength="0"
+                style="@7F1300FA" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1.0" />
+            <LinearLayout
+                android:layout_gravity="0x00000055"
+                android:orientation="0"
+                android:id="@7F0A0321"
+                android:paddingRight="6dp"
+                android:layout_width="-2"
+                android:layout_height="-2">
+                <com.whatsapp.WaTextView
+                    android:id="@7F0A0314"
+                    android:layout_width="-2"
+                    android:layout_height="-2"
+                    style="@7F1302E0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView
+        android:id="@7F0A0499"
+        style="@7F130130" />
+</merge>
