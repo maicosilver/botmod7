@@ -7,16 +7,15 @@
         android:id="@7F0A02BE"
         android:layout_width="@7F070125"
         android:layout_height="-2"
-        android:layout_marginRight="@7F07012E">
-        <include layout="@7F0D00F8" />
+        android:layout_marginLeft="@7F07012E">
         <include layout="@7F0D0101" />
         <include layout="@7F0D0123" />
         <com.whatsapp.WaFrameLayout
             android:layout_width="-1"
             android:layout_height="-2"
             android:layout_margin="5dp"
-            android:foreground="@7F0800C7"
-            app:waflForegroundTint="@7F0600A3">
+            android:foreground="@7F0800D0"
+            app:waflForegroundTint="@7F0600A5">
             <LinearLayout
                 android:orientation="1"
                 android:layout_width="0dp"
@@ -52,7 +51,6 @@
                         android:textSize="15sp"
                         android:textColor="?01010036"
                         android:ellipsize="3"
-                        android:gravity="0x00000010"
                         android:id="@7F0A0B98"
                         android:padding="8dp"
                         android:layout_width="0dp"
@@ -69,8 +67,7 @@
                         <com.whatsapp.WaImageView
                             android:layout_gravity="0x00000011"
                             android:id="@7F0A02C3"
-                            android:background="@null"
-                            android:padding="8dp"
+                            android:padding="@7F070129"
                             android:layout_width="42dp"
                             android:layout_height="42dp"
                             android:scaleType="3"
@@ -89,7 +86,7 @@
         </com.whatsapp.WaFrameLayout>
         <LinearLayout
             android:orientation="0"
-            android:paddingLeft="8dp"
+            android:paddingLeft="@7F070129"
             android:paddingBottom="3dp"
             android:layout_width="-1"
             android:layout_height="-2">
@@ -117,17 +114,19 @@
                 android:id="@7F0A0457"
                 android:layout_width="-2"
                 android:layout_height="-2"
-                android:maxLength="0"
+                android:maxLength="10"
                 style="@7F1300FA" />
             <View
                 android:layout_width="0dp"
                 android:layout_height="1dp"
                 android:layout_weight="1.0" />
             <LinearLayout
-                android:layout_gravity="0x00000055"
+                android:gravity="0x00000010"
+                android:layout_gravity="0x00000005"
                 android:orientation="0"
                 android:id="@7F0A0321"
-                android:paddingRight="6dp"
+                android:paddingLeft="@7F070129"
+                android:paddingRight="7dp"
                 android:layout_width="-2"
                 android:layout_height="-2">
                 <com.whatsapp.WaTextView
@@ -135,6 +134,11 @@
                     android:layout_width="-2"
                     android:layout_height="-2"
                     style="@7F1302E0" />
+                <com.whatsapp.WaImageView
+                    android:id="@7F0A0AC5"
+                    android:paddingLeft="4dp"
+                    android:layout_width="-2"
+                    android:layout_height="-2" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
