@@ -2,122 +2,142 @@
 <!--Open VIP can improve the speed of decompilation, resource code translate to name automatically and activate the smart editing and automatic completion function-->
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout
-        android:layout_width="@7F070147"
+    <LinearLayout
+        android:orientation="1"
+        android:id="@7F0A02DD"
+        android:layout_width="@7F07013E"
         android:layout_height="-2"
-        android:layout_marginRight="@7F07012E">
-        <LinearLayout
-            android:gravity="0x00000005"
-            android:orientation="1"
-            android:id="@7F0A088F"
-            android:layout_width="-2"
-            android:layout_height="-2">
-            <include
-                android:layout_width="-1"
-                android:layout_height="-2"
-                layout="@7F0D00F8" />
-            <include layout="@7F0D0101" />
-            <FrameLayout
-                android:id="@7F0A064C"
-                android:paddingLeft="@7F070153"
-                android:paddingTop="@7F070153"
-                android:paddingRight="@7F070153"
-                android:layout_width="-2"
-                android:layout_height="-2">
-                <view
-                    class="com.whatsapp.conversation.conversationrow.ConversationRowImage$RowImageView"
-                    android:id="@7F0A0576"
-                    android:layout_width="-2"
-                    android:layout_height="-2"
-                    android:scaleType="6" />
-                <FrameLayout
-                    android:layout_gravity="0x00000011"
-                    android:id="@7F0A02C6"
-                    android:background="@7F08017C"
-                    android:layout_width="-2"
-                    android:layout_height="-2">
-                    <com.whatsapp.CircularProgressBar
-                        android:layout_gravity="0x00000011"
-                        android:id="@7F0A08AB"
-                        android:visibility="2"
-                        android:layout_width="@7F070123"
-                        android:layout_height="@7F070123"
-                        android:indeterminateOnly="false" />
-                    <com.whatsapp.WaImageView
-                        android:layout_gravity="0x00000011"
-                        android:id="@7F0A01E0"
-                        android:visibility="2"
-                        android:layout_width="-2"
-                        android:layout_height="-2"
-                        android:src="@7F0800E1" />
-                    <com.whatsapp.WaButton
-                        android:textColor="@7F06011C"
-                        android:ellipsize="0"
-                        android:layout_gravity="0x00000011"
-                        android:id="@7F0A02C3"
-                        android:background="@null"
-                        android:paddingLeft="@7F070143"
-                        android:paddingRight="@7F070143"
-                        android:layout_width="-2"
-                        android:layout_height="-2"
-                        android:singleLine="true"
-                        android:drawableLeft="@7F0800EA"
-                        android:drawablePadding="@7F070142" />
-                </FrameLayout>
-            </FrameLayout>
+        android:layout_marginRight="@7F070148">
+        <include layout="@7F0D00FF" />
+        <include layout="@7F0D010A" />
+        <include layout="@7F0D012C" />
+        <com.ymwhatsapp.WaFrameLayout
+            android:layout_width="-1"
+            android:layout_height="-2"
+            android:layout_margin="5dp"
+            android:foreground="@7F080114"
+            app:waflForegroundTint="@7F0600A4">
             <LinearLayout
                 android:orientation="1"
-                android:background="@7F0801ED"
                 android:layout_width="-1"
                 android:layout_height="-2">
-                <com.whatsapp.TextEmojiLabel
-                    android:id="@7F0A0891"
-                    android:visibility="0"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp" />
-                <com.whatsapp.components.TextAndDateLayout
-                    android:id="@7F0A0B77"
+                <view
+                    android:id="@7F0A08CF"
                     android:layout_width="-1"
-                    android:layout_height="-2"
-                    app:maxTextLineCount="2">
-                    <com.whatsapp.TextEmojiLabel
-                        android:id="@7F0A01E3"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp" />
-                    <LinearLayout
+                    android:layout_height="@7F07013D"
+                    android:scaleType="6"
+                    class="com.ymwhatsapp.conversation.conversationrow.ConversationRowDocument$DocumentPreviewView" />
+                <View
+                    android:id="@7F0A08D3"
+                    android:background="@7F06012F"
+                    android:layout_width="-1"
+                    android:layout_height="0.3dp" />
+                <LinearLayout
+                    android:gravity="0x00000010"
+                    android:orientation="0"
+                    android:id="@7F0A03A2"
+                    android:background="@7F0603B3"
+                    android:paddingLeft="@7F070143"
+                    android:paddingRight="@7F070143"
+                    android:layout_width="-1"
+                    android:layout_height="-2">
+                    <com.ymwhatsapp.WaImageView
+                        android:id="@7F0A05AA"
+                        android:paddingTop="@7F070143"
+                        android:paddingBottom="@7F070143"
+                        android:layout_width="-2"
+                        android:layout_height="-2"
+                        android:scaleType="3" />
+                    <com.ymwhatsapp.TextEmojiLabel
+                        android:textSize="15sp"
+                        android:textColor="?01010036"
+                        android:ellipsize="3"
                         android:gravity="0x00000010"
-                        android:layout_gravity="0x00000055"
-                        android:orientation="0"
-                        android:id="@7F0A0321"
+                        android:id="@7F0A0C0B"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="-2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_weight="1.0" />
+                    <FrameLayout
+                        android:gravity="0x00000011"
+                        android:layout_gravity="0x00000010"
+                        android:id="@7F0A02E4"
                         android:layout_width="-2"
                         android:layout_height="-2">
-                        <com.whatsapp.WaTextView
-                            android:layout_gravity="0x00000015"
-                            android:id="@7F0A0314"
-                            android:layout_width="-2"
-                            android:layout_height="-2"
-                            style="@7F1302E0" />
-                    </LinearLayout>
-                </com.whatsapp.components.TextAndDateLayout>
+                        <com.ymwhatsapp.WaImageView
+                            android:layout_gravity="0x00000011"
+                            android:id="@7F0A02E3"
+                            android:background="@null"
+                            android:padding="8dp"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:scaleType="3"
+                            android:alpha="0.7"
+                            app:tint="@7F060162" />
+                        <com.ymwhatsapp.CircularProgressBar
+                            android:layout_gravity="0x00000011"
+                            android:id="@7F0A0918"
+                            android:visibility="2"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:indeterminateOnly="false" />
+                    </FrameLayout>
+                </LinearLayout>
             </LinearLayout>
-            <View
-                android:layout_gravity="0x00000050"
-                android:id="@7F0A0143"
-                android:visibility="2"
-                android:layout_marginTop="-4dp"
-                style="@7F1301B8" />
-            <com.whatsapp.TextEmojiLabel
-                android:textColor="@7F0801D2"
-                android:layout_gravity="0x00000011"
-                android:id="@7F0A0C61"
-                android:paddingTop="@7F070129"
-                android:layout_width="-1"
+        </com.ymwhatsapp.WaFrameLayout>
+        <LinearLayout
+            android:orientation="0"
+            android:paddingLeft="8dp"
+            android:paddingBottom="3dp"
+            android:layout_width="-1"
+            android:layout_height="-2">
+            <com.ymwhatsapp.WaTextView
+                android:id="@7F0A05C2"
+                android:layout_width="-2"
                 android:layout_height="-2"
-                style="@7F130107" />
+                style="@7F1300FA" />
+            <com.ymwhatsapp.WaTextView
+                android:id="@7F0A015A"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FB" />
+            <com.ymwhatsapp.WaTextView
+                android:id="@7F0A0489"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FA" />
+            <com.ymwhatsapp.WaTextView
+                android:id="@7F0A0159"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FB" />
+            <com.ymwhatsapp.WaTextView
+                android:id="@7F0A048A"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                style="@7F1300FA" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1.0" />
+            <LinearLayout
+                android:layout_gravity="0x00000055"
+                android:orientation="0"
+                android:id="@7F0A0342"
+                android:paddingRight="6dp"
+                android:layout_width="-2"
+                android:layout_height="-2">
+                <com.ymwhatsapp.WaTextView
+                    android:id="@7F0A0335"
+                    android:layout_width="-2"
+                    android:layout_height="-2"
+                    style="@7F1302E6" />
+            </LinearLayout>
         </LinearLayout>
-    </FrameLayout>
-    <com.whatsapp.WaImageView
-        android:id="@7F0A0499"
-        android:contentDescription="@7F12032E"
-        style="@7F130130" />
+    </LinearLayout>
+    <com.ymwhatsapp.WaImageView
+        android:id="@7F0A04CF"
+        style="@7F130133" />
 </merge>
