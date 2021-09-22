@@ -2,7 +2,7 @@
 <!--Open VIP can improve the speed of decompilation, resource code translate to name automatically and activate the smart editing and automatic completion function-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="1"
-    android:id="@7F0A0EC8"
+    android:id="@7F0A0E3E"
     android:padding="2dp"
     android:layout_width="-1"
     android:layout_height="-1"
@@ -14,29 +14,28 @@
         android:paddingBottom="5dp"
         android:layout_width="-2"
         android:layout_height="-2"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp">
+        android:paddingStart="40dp">
         <ImageView
-            android:id="@7F0A0EC2"
+            android:id="@7F0A0E3D"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@7F08064D" />
+            android:src="@7F080629" />
         <TextView
-            android:textAppearance="@7F130202"
+            android:textAppearance="@7F1301F6"
             android:textSize="8pt"
             android:typeface="1"
             android:textStyle="0x00000001"
-            android:id="@7F0A0D40"
+            android:id="@7F0A0CC1"
             android:layout_width="-2"
             android:layout_height="-2"
             android:layout_marginStart="8dp" />
     </LinearLayout>
     <FrameLayout
-        android:id="@7F0A056C"
+        android:id="@7F0A052F"
         android:layout_width="-1"
-        android:layout_height="-1">
+        android:layout_height="0dp">
         <WebView
-            android:id="@7F0A0ED4"
+            android:id="@7F0A0E3C"
             android:background="@0106000D"
             android:layout_width="-1"
             android:layout_height="-1"
@@ -46,41 +45,38 @@
         android:gravity="0x00800005"
         android:layout_width="-1"
         android:layout_height="-2"
-        android:layout_margin="1dp"
-        android:paddingEnd="10dp">
+        android:layout_margin="1dp">
         <Button
-            android:textAppearance="@7F130202"
+            android:textAppearance="@7F1301F6"
             android:textSize="15sp"
             android:typeface="1"
             android:textStyle="0x00000001"
-            android:id="@7F0A022E"
-            android:background="@7F08063C"
+            android:id="@7F0A0214"
+            android:background="@7F080617"
             android:layout_width="-2"
             android:layout_height="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:text="@7F12023F"
+            android:text="@7F12020A"
             android:textAllCaps="false"
             android:paddingStart="15dp"
-            android:paddingEnd="14dp"
-            style="?0101032B" />
+            android:paddingEnd="14dp" />
         <Button
-            android:textAppearance="@7F130202"
+            android:textAppearance="@7F1301F6"
             android:textSize="15sp"
             android:typeface="1"
             android:textStyle="0x00000001"
-            android:id="@7F0A040A"
-            android:background="@7F08063D"
+            android:id="@7F0A03DF"
+            android:background="@7F080618"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:layout_width="-2"
             android:layout_height="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:text="@7F120211"
+            android:text="@7F120579"
             android:textAllCaps="false"
             android:layout_marginStart="10dp"
-            android:layout_toEndOf="@7F0A022E"
-            style="?0101032B" />
+            android:layout_toEndOf="@7F0A0214" />
     </RelativeLayout>
 </LinearLayout>
